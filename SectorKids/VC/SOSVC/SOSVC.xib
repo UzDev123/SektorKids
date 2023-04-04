@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SOSVC" customModule="SectorKids" customModuleProvider="target">
+            <connections>
+                <outlet property="sosButton" destination="uzY-Ih-pgE" id="Oed-o1-ypG"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uzY-Ih-pgE">
+                    <rect key="frame" x="78.666666666666671" y="308" width="235.66666666666663" height="236"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="uzY-Ih-pgE" secondAttribute="height" id="cHQ-Ok-OxD"/>
+                    </constraints>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="" image="sos_button"/>
+                    <connections>
+                        <action selector="sosTapped:" destination="-1" eventType="touchUpInside" id="p3Q-Gz-2MN"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" red="0.96470588235294119" green="0.96470588235294119" blue="0.96470588235294119" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="uzY-Ih-pgE" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="K6T-wc-lc4"/>
+                <constraint firstItem="uzY-Ih-pgE" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.6" id="rJQ-nZ-2Tj"/>
+                <constraint firstItem="uzY-Ih-pgE" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="tln-dV-AB8"/>
+            </constraints>
+            <point key="canvasLocation" x="21" y="-11"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="sos_button" width="238" height="238.33332824707031"/>
+    </resources>
+</document>

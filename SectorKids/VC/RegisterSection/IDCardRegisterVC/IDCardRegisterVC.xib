@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Bold.ttf">
+            <string>Roboto-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="IDCardRegisterVC" customModule="SectorKids" customModuleProvider="target">
+            <connections>
+                <outlet property="backView" destination="AOt-Hn-8Iq" id="eTs-eb-mo8"/>
+                <outlet property="bottomView" destination="9vZ-2h-ugb" id="eI1-jc-UpY"/>
+                <outlet property="passportSerires_TF" destination="T9v-sv-9lY" id="Xzg-05-Is6"/>
+                <outlet property="pinfl_TF" destination="AFQ-f5-PDv" id="oWQ-m7-JCj"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="rns-Gf-mlP">
+                    <rect key="frame" x="30" y="109.00000000000001" width="333" height="211.33333333333337"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="kjH-aa-YEz">
+                            <rect key="frame" x="0.0" y="0.0" width="333" height="57"/>
+                            <subviews>
+                                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Passport/ID seriyasi va raqami" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="T9v-sv-9lY">
+                                    <rect key="frame" x="0.0" y="0.0" width="293" height="57"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                                </textField>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="voQ-ER-ZsT">
+                                    <rect key="frame" x="311" y="0.0" width="22" height="57"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" image="info"/>
+                                    <connections>
+                                        <action selector="whatsPINFLTapped:" destination="-1" eventType="touchUpInside" id="cy7-AD-PRE"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="P5G-NM-iZ7">
+                            <rect key="frame" x="0.0" y="77" width="333" height="57.333333333333343"/>
+                            <subviews>
+                                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="PINFL" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AFQ-f5-PDv">
+                                    <rect key="frame" x="0.0" y="0.0" width="293" height="57.333333333333336"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done"/>
+                                </textField>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gc4-yq-IMD">
+                                    <rect key="frame" x="311" y="0.0" width="22" height="57.333333333333336"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" image="info"/>
+                                    <connections>
+                                        <action selector="whatsPINFLTapped:" destination="-1" eventType="touchUpInside" id="PUD-bj-Hfb"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                        </stackView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ivC-6f-9OO">
+                            <rect key="frame" x="0.0" y="154.33333333333331" width="333" height="57"/>
+                            <color key="backgroundColor" red="0.061544127759999998" green="0.11467669160000001" blue="0.30059731010000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="Davom etish">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <integer key="value" value="5"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="continueTapped:" destination="-1" eventType="touchUpInside" id="l41-hB-XBY"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                </stackView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AOt-Hn-8Iq">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ocY-Sm-tG9">
+                            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain"/>
+                            <connections>
+                                <action selector="xButtonTapped:" destination="-1" eventType="touchUpInside" id="j0T-wF-253"/>
+                            </connections>
+                        </button>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9vZ-2h-ugb">
+                            <rect key="frame" x="0.0" y="352" width="393" height="500"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="Tvn-kQ-WoF">
+                                    <rect key="frame" x="30" y="40" width="333" height="22"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PINFL nima?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eot-KK-VYZ">
+                                            <rect key="frame" x="0.0" y="0.0" width="293" height="22"/>
+                                            <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="18"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Im1-b9-5qd">
+                                            <rect key="frame" x="293" y="0.0" width="40" height="22"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="40" id="kqB-ov-6tb"/>
+                                            </constraints>
+                                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                            <state key="normal" image="xmark" catalog="system"/>
+                                            <connections>
+                                                <action selector="xButtonTapped:" destination="-1" eventType="touchUpInside" id="S2T-75-uHh"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                </stackView>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PINFL" translatesAutoresizingMaskIntoConstraints="NO" id="13m-ab-tpN">
+                                    <rect key="frame" x="0.0" y="82" width="393" height="364"/>
+                                </imageView>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstItem="Tvn-kQ-WoF" firstAttribute="leading" secondItem="9vZ-2h-ugb" secondAttribute="leading" constant="30" id="1TN-Lj-CSk"/>
+                                <constraint firstAttribute="trailing" secondItem="13m-ab-tpN" secondAttribute="trailing" id="Nwz-9s-Rl4"/>
+                                <constraint firstAttribute="height" constant="500" id="Sur-wr-B2l"/>
+                                <constraint firstItem="13m-ab-tpN" firstAttribute="top" secondItem="Tvn-kQ-WoF" secondAttribute="bottom" constant="20" id="XVP-fX-ILK"/>
+                                <constraint firstItem="13m-ab-tpN" firstAttribute="leading" secondItem="9vZ-2h-ugb" secondAttribute="leading" id="ep1-sb-sKa"/>
+                                <constraint firstItem="Tvn-kQ-WoF" firstAttribute="top" secondItem="9vZ-2h-ugb" secondAttribute="top" constant="40" id="iyD-is-Yps"/>
+                                <constraint firstAttribute="trailing" secondItem="Tvn-kQ-WoF" secondAttribute="trailing" constant="30" id="ru9-H5-HfB"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.30039321192052981" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="ocY-Sm-tG9" firstAttribute="height" secondItem="AOt-Hn-8Iq" secondAttribute="height" id="7PR-gq-cR7"/>
+                        <constraint firstItem="ocY-Sm-tG9" firstAttribute="centerY" secondItem="AOt-Hn-8Iq" secondAttribute="centerY" id="EOM-ir-PpW"/>
+                        <constraint firstItem="ocY-Sm-tG9" firstAttribute="width" secondItem="AOt-Hn-8Iq" secondAttribute="width" id="LdL-af-IVz"/>
+                        <constraint firstItem="ocY-Sm-tG9" firstAttribute="centerX" secondItem="AOt-Hn-8Iq" secondAttribute="centerX" id="i2K-59-a9X"/>
+                        <constraint firstAttribute="bottom" secondItem="9vZ-2h-ugb" secondAttribute="bottom" id="rGo-X1-zfw"/>
+                        <constraint firstAttribute="trailing" secondItem="9vZ-2h-ugb" secondAttribute="trailing" id="tQR-r1-eaw"/>
+                        <constraint firstItem="9vZ-2h-ugb" firstAttribute="leading" secondItem="AOt-Hn-8Iq" secondAttribute="leading" id="zDR-O7-7y3"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="rns-Gf-mlP" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="5Wt-hN-mwB"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="rns-Gf-mlP" secondAttribute="trailing" constant="30" id="A5f-t6-6Qe"/>
+                <constraint firstItem="AOt-Hn-8Iq" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="E9o-No-GnK"/>
+                <constraint firstItem="ivC-6f-9OO" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="56/835" id="TpO-Yz-whh"/>
+                <constraint firstAttribute="bottom" secondItem="AOt-Hn-8Iq" secondAttribute="bottom" id="iql-yH-qfY"/>
+                <constraint firstItem="rns-Gf-mlP" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="50" id="kr1-iz-USC"/>
+                <constraint firstItem="AOt-Hn-8Iq" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="na6-fv-Dha"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="AOt-Hn-8Iq" secondAttribute="trailing" id="p7Z-cw-LOc"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="13m-ab-tpN" secondAttribute="bottom" constant="20" id="uGr-wO-sZ7"/>
+            </constraints>
+            <point key="canvasLocation" x="72.51908396946564" y="19.718309859154932"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="PINFL" width="346" height="325"/>
+        <image name="info" width="22" height="22"/>
+        <image name="xmark" catalog="system" width="128" height="113"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

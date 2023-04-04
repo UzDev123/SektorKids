@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="162" id="KGk-i7-Jjw" customClass="ProfileImageTVC" customModule="SectorKids" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="162"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="162"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u9e-Hc-96e">
+                        <rect key="frame" x="20" y="10" width="280" height="142"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="locations" translatesAutoresizingMaskIntoConstraints="NO" id="KSe-G7-8Qt">
+                                <rect key="frame" x="111.66666666666667" y="9.9999999999999964" width="56.666666666666671" height="56.666666666666657"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="KSe-G7-8Qt" secondAttribute="height" id="Z1z-8N-7yw"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Jyv-Ge-HBL">
+                                <rect key="frame" x="10" y="81.666666666666671" width="260" height="36"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Turapov avazbek" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V5m-cp-QSu">
+                                        <rect key="frame" x="0.0" y="0.0" width="260" height="16.666666666666668"/>
+                                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="14"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Turapov avazbek" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="70C-J1-fkF">
+                                        <rect key="frame" x="0.0" y="21.666666666666657" width="260" height="14.333333333333336"/>
+                                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="12"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2b7-KF-Jk6">
+                                <rect key="frame" x="230" y="10" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="ZFo-3Y-sge"/>
+                                    <constraint firstAttribute="width" constant="40" id="qV7-GY-chg"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="edit"/>
+                                <connections>
+                                    <action selector="editTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="X6V-0e-P2m"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="2b7-KF-Jk6" secondAttribute="trailing" constant="10" id="XlT-r0-gNs"/>
+                            <constraint firstAttribute="trailing" secondItem="Jyv-Ge-HBL" secondAttribute="trailing" constant="10" id="ZtY-8w-cZ8"/>
+                            <constraint firstItem="2b7-KF-Jk6" firstAttribute="top" secondItem="u9e-Hc-96e" secondAttribute="top" constant="10" id="an2-OP-y0P"/>
+                            <constraint firstItem="KSe-G7-8Qt" firstAttribute="height" secondItem="u9e-Hc-96e" secondAttribute="height" multiplier="0.4" id="hz4-oV-tTP"/>
+                            <constraint firstItem="KSe-G7-8Qt" firstAttribute="centerX" secondItem="u9e-Hc-96e" secondAttribute="centerX" id="jh8-Ve-602"/>
+                            <constraint firstItem="KSe-G7-8Qt" firstAttribute="top" secondItem="u9e-Hc-96e" secondAttribute="top" constant="10" id="peq-j3-v80"/>
+                            <constraint firstItem="Jyv-Ge-HBL" firstAttribute="top" secondItem="KSe-G7-8Qt" secondAttribute="bottom" constant="15" id="rlv-wZ-TQg"/>
+                            <constraint firstItem="Jyv-Ge-HBL" firstAttribute="leading" secondItem="u9e-Hc-96e" secondAttribute="leading" constant="10" id="zKV-Bt-d15"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <integer key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="u9e-Hc-96e" secondAttribute="bottom" constant="10" id="Vik-Pm-RWe"/>
+                    <constraint firstItem="u9e-Hc-96e" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="jib-xO-4bO"/>
+                    <constraint firstAttribute="trailing" secondItem="u9e-Hc-96e" secondAttribute="trailing" constant="20" id="u2l-pH-VRI"/>
+                    <constraint firstItem="u9e-Hc-96e" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="z3E-9Q-7NA"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="nameLabel" destination="V5m-cp-QSu" id="qDT-aQ-C3d"/>
+                <outlet property="phoneLabel" destination="70C-J1-fkF" id="w7K-vK-aqy"/>
+                <outlet property="userImgView" destination="KSe-G7-8Qt" id="ygT-NH-0TD"/>
+            </connections>
+            <point key="canvasLocation" x="21" y="61"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="edit" width="14.333333015441895" height="14.333333015441895"/>
+        <image name="locations" width="70.333335876464844" height="70.333335876464844"/>
+    </resources>
+</document>
