@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		69EF011FC3A6801F5030E22F /* Pods_SectorKids.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAFD726B1F824A33A10375A4 /* Pods_SectorKids.framework */; };
+		D356221F2857A70246941E41 /* Pods_SectorKids.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EAF2016294860230C9C2AFE /* Pods_SectorKids.framework */; };
 		DC17E4E129C2EBC600E0FBD5 /* StatisticsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC17E4DF29C2EBC600E0FBD5 /* StatisticsVC.swift */; };
 		DC17E4E229C2EBC600E0FBD5 /* StatisticsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC17E4E029C2EBC600E0FBD5 /* StatisticsVC.xib */; };
 		DC17E4E629C2EC5F00E0FBD5 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC17E4E429C2EC5F00E0FBD5 /* ProfileVC.swift */; };
@@ -46,12 +46,15 @@
 		DC31826B29CEF77D0036BAAA /* SOSVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC31826929CEF77D0036BAAA /* SOSVC.xib */; };
 		DC31826D29D165E30036BAAA /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC31826C29D165E30036BAAA /* Alert.swift */; };
 		DC31826F29D166140036BAAA /* Vibration.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC31826E29D166140036BAAA /* Vibration.swift */; };
-		DC4DC98429CC3BDE0025D866 /* IDCardRegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4DC98229CC3BDE0025D866 /* IDCardRegisterVC.swift */; };
-		DC4DC98529CC3BDE0025D866 /* IDCardRegisterVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC4DC98329CC3BDE0025D866 /* IDCardRegisterVC.xib */; };
 		DC4DC98929CC497A0025D866 /* OTPVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4DC98729CC497A0025D866 /* OTPVC.swift */; };
 		DC4DC98A29CC497A0025D866 /* OTPVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC4DC98829CC497A0025D866 /* OTPVC.xib */; };
 		DC4DC98E29CD70570025D866 /* ProfileImageTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4DC98C29CD70570025D866 /* ProfileImageTVC.swift */; };
 		DC4DC98F29CD70570025D866 /* ProfileImageTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC4DC98D29CD70570025D866 /* ProfileImageTVC.xib */; };
+		DCB7C4B629DD7D1B002594F0 /* RecordListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB7C4B429DD7D1B002594F0 /* RecordListVC.swift */; };
+		DCB7C4B729DD7D1B002594F0 /* RecordListVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DCB7C4B529DD7D1B002594F0 /* RecordListVC.xib */; };
+		DCB7C4BF29DD7E16002594F0 /* RecordListTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB7C4BD29DD7E16002594F0 /* RecordListTVC.swift */; };
+		DCB7C4C029DD7E16002594F0 /* RecordListTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DCB7C4BE29DD7E16002594F0 /* RecordListTVC.xib */; };
+		DCB7C4C329DEA442002594F0 /* Socket.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB7C4C229DEA442002594F0 /* Socket.swift */; };
 		DCE5D55829C1CE5B00B1D0F6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE5D55729C1CE5B00B1D0F6 /* AppDelegate.swift */; };
 		DCE5D55A29C1CE5B00B1D0F6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE5D55929C1CE5B00B1D0F6 /* SceneDelegate.swift */; };
 		DCE5D56129C1CE5E00B1D0F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCE5D56029C1CE5E00B1D0F6 /* Assets.xcassets */; };
@@ -62,9 +65,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		17CE47F8A7ECA072FFFE9AE4 /* Pods-SectorKids.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SectorKids.release.xcconfig"; path = "Target Support Files/Pods-SectorKids/Pods-SectorKids.release.xcconfig"; sourceTree = "<group>"; };
-		42070A6A83AD6197FA622800 /* Pods-SectorKids.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SectorKids.debug.xcconfig"; path = "Target Support Files/Pods-SectorKids/Pods-SectorKids.debug.xcconfig"; sourceTree = "<group>"; };
-		DAFD726B1F824A33A10375A4 /* Pods_SectorKids.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SectorKids.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C9F09A1585BA8CBE6AAD2AE /* Pods-SectorKids.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SectorKids.release.xcconfig"; path = "Target Support Files/Pods-SectorKids/Pods-SectorKids.release.xcconfig"; sourceTree = "<group>"; };
+		8EAF2016294860230C9C2AFE /* Pods_SectorKids.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SectorKids.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC17E4DF29C2EBC600E0FBD5 /* StatisticsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsVC.swift; sourceTree = "<group>"; };
 		DC17E4E029C2EBC600E0FBD5 /* StatisticsVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StatisticsVC.xib; sourceTree = "<group>"; };
 		DC17E4E429C2EC5F00E0FBD5 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
@@ -103,12 +105,15 @@
 		DC31826929CEF77D0036BAAA /* SOSVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SOSVC.xib; sourceTree = "<group>"; };
 		DC31826C29D165E30036BAAA /* Alert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		DC31826E29D166140036BAAA /* Vibration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vibration.swift; sourceTree = "<group>"; };
-		DC4DC98229CC3BDE0025D866 /* IDCardRegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IDCardRegisterVC.swift; sourceTree = "<group>"; };
-		DC4DC98329CC3BDE0025D866 /* IDCardRegisterVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IDCardRegisterVC.xib; sourceTree = "<group>"; };
 		DC4DC98729CC497A0025D866 /* OTPVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPVC.swift; sourceTree = "<group>"; };
 		DC4DC98829CC497A0025D866 /* OTPVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OTPVC.xib; sourceTree = "<group>"; };
 		DC4DC98C29CD70570025D866 /* ProfileImageTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileImageTVC.swift; sourceTree = "<group>"; };
 		DC4DC98D29CD70570025D866 /* ProfileImageTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileImageTVC.xib; sourceTree = "<group>"; };
+		DCB7C4B429DD7D1B002594F0 /* RecordListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordListVC.swift; sourceTree = "<group>"; };
+		DCB7C4B529DD7D1B002594F0 /* RecordListVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecordListVC.xib; sourceTree = "<group>"; };
+		DCB7C4BD29DD7E16002594F0 /* RecordListTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordListTVC.swift; sourceTree = "<group>"; };
+		DCB7C4BE29DD7E16002594F0 /* RecordListTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecordListTVC.xib; sourceTree = "<group>"; };
+		DCB7C4C229DEA442002594F0 /* Socket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Socket.swift; sourceTree = "<group>"; };
 		DCE5D55429C1CE5B00B1D0F6 /* SectorKids.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SectorKids.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCE5D55729C1CE5B00B1D0F6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DCE5D55929C1CE5B00B1D0F6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -118,6 +123,7 @@
 		DCE5D56B29C1EBAC00B1D0F6 /* MainTabbarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabbarVC.swift; sourceTree = "<group>"; };
 		DCE5D56E29C1EBE300B1D0F6 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		DCE5D56F29C1EBE300B1D0F6 /* MainVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainVC.xib; sourceTree = "<group>"; };
+		F9BA2E1B9FDACE01FEFEDB62 /* Pods-SectorKids.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SectorKids.debug.xcconfig"; path = "Target Support Files/Pods-SectorKids/Pods-SectorKids.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,28 +131,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				69EF011FC3A6801F5030E22F /* Pods_SectorKids.framework in Frameworks */,
+				D356221F2857A70246941E41 /* Pods_SectorKids.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		05CFCAE6BE2E525876B61172 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				DAFD726B1F824A33A10375A4 /* Pods_SectorKids.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		11961DF1D048910E06697227 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				42070A6A83AD6197FA622800 /* Pods-SectorKids.debug.xcconfig */,
-				17CE47F8A7ECA072FFFE9AE4 /* Pods-SectorKids.release.xcconfig */,
+				F9BA2E1B9FDACE01FEFEDB62 /* Pods-SectorKids.debug.xcconfig */,
+				4C9F09A1585BA8CBE6AAD2AE /* Pods-SectorKids.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		ABC23B5C793A12237EFC4C0D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8EAF2016294860230C9C2AFE /* Pods_SectorKids.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		DC17E4DE29C2EBB300E0FBD5 /* StatisticsVC */ = {
@@ -207,6 +213,7 @@
 		DC17E50629C2EEBD00E0FBD5 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				DCB7C4C129DE9573002594F0 /* Socket */,
 				DC25F2C729DAB7E2000E17BF /* Cache */,
 				DC25F2BF29DAB64F000E17BF /* Networking */,
 				DC31827029D166170036BAAA /* Alert */,
@@ -312,19 +319,9 @@
 				DC25F2CD29DADDB0000E17BF /* LoginVC */,
 				DC4DC98629CC49610025D866 /* OTPVC */,
 				DC17E50B29C4257500E0FBD5 /* WelcomeVC */,
-				DC4DC98129CC3BBB0025D866 /* IDCardRegisterVC */,
 				DC17E51029C43DA900E0FBD5 /* RegisterVC */,
 			);
 			path = RegisterSection;
-			sourceTree = "<group>";
-		};
-		DC4DC98129CC3BBB0025D866 /* IDCardRegisterVC */ = {
-			isa = PBXGroup;
-			children = (
-				DC4DC98229CC3BDE0025D866 /* IDCardRegisterVC.swift */,
-				DC4DC98329CC3BDE0025D866 /* IDCardRegisterVC.xib */,
-			);
-			path = IDCardRegisterVC;
 			sourceTree = "<group>";
 		};
 		DC4DC98629CC49610025D866 /* OTPVC */ = {
@@ -345,13 +342,40 @@
 			path = TVC;
 			sourceTree = "<group>";
 		};
+		DCB7C4B329DD7D02002594F0 /* RecordListVC */ = {
+			isa = PBXGroup;
+			children = (
+				DCB7C4B829DD7DA0002594F0 /* TVC */,
+				DCB7C4B429DD7D1B002594F0 /* RecordListVC.swift */,
+				DCB7C4B529DD7D1B002594F0 /* RecordListVC.xib */,
+			);
+			path = RecordListVC;
+			sourceTree = "<group>";
+		};
+		DCB7C4B829DD7DA0002594F0 /* TVC */ = {
+			isa = PBXGroup;
+			children = (
+				DCB7C4BD29DD7E16002594F0 /* RecordListTVC.swift */,
+				DCB7C4BE29DD7E16002594F0 /* RecordListTVC.xib */,
+			);
+			path = TVC;
+			sourceTree = "<group>";
+		};
+		DCB7C4C129DE9573002594F0 /* Socket */ = {
+			isa = PBXGroup;
+			children = (
+				DCB7C4C229DEA442002594F0 /* Socket.swift */,
+			);
+			path = Socket;
+			sourceTree = "<group>";
+		};
 		DCE5D54B29C1CE5A00B1D0F6 = {
 			isa = PBXGroup;
 			children = (
 				DCE5D55629C1CE5B00B1D0F6 /* SectorKids */,
 				DCE5D55529C1CE5B00B1D0F6 /* Products */,
 				11961DF1D048910E06697227 /* Pods */,
-				05CFCAE6BE2E525876B61172 /* Frameworks */,
+				ABC23B5C793A12237EFC4C0D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -383,6 +407,7 @@
 		DCE5D56D29C1EBC700B1D0F6 /* VC */ = {
 			isa = PBXGroup;
 			children = (
+				DCB7C4B329DD7D02002594F0 /* RecordListVC */,
 				DC25F2D229DBE67E000E17BF /* CreateChildVC */,
 				DC31826729CEF75D0036BAAA /* SOSVC */,
 				DC4DC98029CC3A620025D866 /* RegisterSection */,
@@ -409,11 +434,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DCE5D56829C1CE5E00B1D0F6 /* Build configuration list for PBXNativeTarget "SectorKids" */;
 			buildPhases = (
-				8DD85B83C56B7B5B33B6A7B9 /* [CP] Check Pods Manifest.lock */,
+				1E8F8DBF0793848D29458B80 /* [CP] Check Pods Manifest.lock */,
 				DCE5D55029C1CE5B00B1D0F6 /* Sources */,
 				DCE5D55129C1CE5B00B1D0F6 /* Frameworks */,
 				DCE5D55229C1CE5B00B1D0F6 /* Resources */,
-				FD65AF7A616FB507D06A022B /* [CP] Embed Pods Frameworks */,
+				C2C0DF1334CF28CFAFEA7735 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -467,6 +492,7 @@
 				DC17E4FC29C2EE8D00E0FBD5 /* Roboto-ThinItalic.ttf in Resources */,
 				DC4DC98A29CC497A0025D866 /* OTPVC.xib in Resources */,
 				DC17E4FD29C2EE8D00E0FBD5 /* Roboto-BoldItalic.ttf in Resources */,
+				DCB7C4B729DD7D1B002594F0 /* RecordListVC.xib in Resources */,
 				DC17E50329C2EE8D00E0FBD5 /* Roboto-Thin.ttf in Resources */,
 				DC17E4FE29C2EE8D00E0FBD5 /* Roboto-LightItalic.ttf in Resources */,
 				DC4DC98F29CD70570025D866 /* ProfileImageTVC.xib in Resources */,
@@ -479,6 +505,7 @@
 				DC17E50029C2EE8D00E0FBD5 /* LICENSE.txt in Resources */,
 				DC17E50129C2EE8D00E0FBD5 /* Roboto-BlackItalic.ttf in Resources */,
 				DC25F2D129DADDC8000E17BF /* LoginVC.xib in Resources */,
+				DCB7C4C029DD7E16002594F0 /* RecordListTVC.xib in Resources */,
 				DC17E4FA29C2EE8D00E0FBD5 /* Roboto-Regular.ttf in Resources */,
 				DC17E4F829C2EE8D00E0FBD5 /* Roboto-Medium.ttf in Resources */,
 				DCE5D56429C1CE5E00B1D0F6 /* LaunchScreen.storyboard in Resources */,
@@ -487,14 +514,13 @@
 				DC17E4FB29C2EE8D00E0FBD5 /* Roboto-MediumItalic.ttf in Resources */,
 				DC17E50229C2EE8D00E0FBD5 /* Roboto-Bold.ttf in Resources */,
 				DC17E4E729C2EC5F00E0FBD5 /* ProfileVC.xib in Resources */,
-				DC4DC98529CC3BDE0025D866 /* IDCardRegisterVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		8DD85B83C56B7B5B33B6A7B9 /* [CP] Check Pods Manifest.lock */ = {
+		1E8F8DBF0793848D29458B80 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -516,7 +542,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		FD65AF7A616FB507D06A022B /* [CP] Embed Pods Frameworks */ = {
+		C2C0DF1334CF28CFAFEA7735 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -545,12 +571,13 @@
 				DC25F2D029DADDC8000E17BF /* LoginVC.swift in Sources */,
 				DC25F2C129DAB69E000E17BF /* API.swift in Sources */,
 				DCE5D56C29C1EBAC00B1D0F6 /* MainTabbarVC.swift in Sources */,
+				DCB7C4C329DEA442002594F0 /* Socket.swift in Sources */,
 				DC25F2C929DAB7F7000E17BF /* Cache.swift in Sources */,
+				DCB7C4BF29DD7E16002594F0 /* RecordListTVC.swift in Sources */,
 				DC17E4E129C2EBC600E0FBD5 /* StatisticsVC.swift in Sources */,
 				DC25F2C629DAB793000E17BF /* Loader.swift in Sources */,
 				DC31826629CEE4800036BAAA /* ChartView.swift in Sources */,
 				DC17E50A29C2EFCD00E0FBD5 /* Extensions.swift in Sources */,
-				DC4DC98429CC3BDE0025D866 /* IDCardRegisterVC.swift in Sources */,
 				DC31826F29D166140036BAAA /* Vibration.swift in Sources */,
 				DC25F2BE29DAB5DF000E17BF /* Net.swift in Sources */,
 				DCE5D57029C1EBE300B1D0F6 /* MainVC.swift in Sources */,
@@ -561,6 +588,7 @@
 				DC17E50E29C4258F00E0FBD5 /* WelcomeVC.swift in Sources */,
 				DCE5D55829C1CE5B00B1D0F6 /* AppDelegate.swift in Sources */,
 				DCE5D55A29C1CE5B00B1D0F6 /* SceneDelegate.swift in Sources */,
+				DCB7C4B629DD7D1B002594F0 /* RecordListVC.swift in Sources */,
 				DC25F2CC29DAD005000E17BF /* UserDM.swift in Sources */,
 				DC4DC98929CC497A0025D866 /* OTPVC.swift in Sources */,
 				DC31826D29D165E30036BAAA /* Alert.swift in Sources */,
@@ -698,10 +726,11 @@
 		};
 		DCE5D56929C1CE5E00B1D0F6 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 42070A6A83AD6197FA622800 /* Pods-SectorKids.debug.xcconfig */;
+			baseConfigurationReference = F9BA2E1B9FDACE01FEFEDB62 /* Pods-SectorKids.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = Q6ADGJMW5Y;
@@ -725,10 +754,11 @@
 		};
 		DCE5D56A29C1CE5E00B1D0F6 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 17CE47F8A7ECA072FFFE9AE4 /* Pods-SectorKids.release.xcconfig */;
+			baseConfigurationReference = 4C9F09A1585BA8CBE6AAD2AE /* Pods-SectorKids.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = Q6ADGJMW5Y;

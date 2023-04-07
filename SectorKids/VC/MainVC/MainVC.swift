@@ -45,8 +45,6 @@ class MainVC: UIViewController {
                 }
                 self.segmentedControl.selectedSegmentIndex = 0
             }
-            
-            
         }
     }
     override func viewDidLayoutSubviews() {
@@ -85,6 +83,11 @@ class MainVC: UIViewController {
         let vc = SOSVC(nibName: "SOSVC", bundle: nil)
         vc.hidesBottomBarWhenPushed = true
         self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    @IBAction func microphoneButtonTapped(_ sender: UIButton) {
+        let vc = RecordListVC(nibName: "RecordListVC", bundle: nil)
+        navigationController?.pushViewController(vc, animated: true)
     }
     @IBAction func segmentToggled(_ sender: UISegmentedControl) {
         

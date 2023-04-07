@@ -34,8 +34,9 @@ class OTPVC: UIViewController, UITextFieldDelegate {
             textField.resignFirstResponder()
             API.send_otp(phone: String(phone.dropFirst()), otp: textField.text!) { isSuccess in
                 if isSuccess{
-                    let vc = IDCardRegisterVC(nibName: "IDCardRegisterVC", bundle: nil)
-                    self.navigationController?.pushViewController(vc, animated: true)
+                    let vc = MainTabbarVC()
+                    vc.modalPresentationStyle = .overFullScreen
+                    self.present(vc,animated: true)
                 }
             }
             

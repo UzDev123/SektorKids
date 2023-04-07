@@ -16,15 +16,24 @@ class ProfileVC: UIViewController {
             tableView.register(ProfileImageTVC.getProfileImageTVC(), forCellReuseIdentifier: ProfileImageTVC.getProfileImageTVCID)
         }
     }
-    var data = ["Obuna","Balans","Sozlamalar","Call center", "Biz haqimizda", "Chiqish"]
+    var data = [
+        "Sozlamalar",
+        "Call center",
+        "Biz haqimizda",
+        "Chiqish",
+        "Profilni o'chirish"
+    ]
+    
     var cellImages = [
-        UIImage(named: "calendar_profile"),
-        UIImage(named: "dollar_profile"),
         UIImage(named: "headphone_profile"),
         UIImage(named: "info_profile"),
         UIImage(named: "settings_profile"),
-        UIImage(named: "signout_profile")]
+        UIImage(named: "signout_profile"),
+        UIImage(named: "trash_profile")
+    ]
+    
     var userData : UserDM!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Profil"
@@ -45,7 +54,7 @@ extension ProfileVC : UITableViewDelegate, UITableViewDataSource, ProfileTVCDele
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 7
+        return data.count + 1
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -58,7 +67,6 @@ extension ProfileVC : UITableViewDelegate, UITableViewDataSource, ProfileTVCDele
             let cell = UITableViewCell(style: .value1, reuseIdentifier: nil)
             cell.selectionStyle = .none
             cell.textLabel!.text = data[indexPath.row - 1]
-            cell.detailTextLabel!.text  = indexPath.row == 2 ? "543000 UZS" : ""
             cell.imageView!.image = cellImages[indexPath.row - 1]
             cell.backgroundColor = .clear
             return cell

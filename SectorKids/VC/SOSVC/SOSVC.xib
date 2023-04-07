@@ -1,14 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SOSVC" customModule="SectorKids" customModuleProvider="target">
             <connections>
+                <outlet property="messageButton" destination="pUc-tE-6a8" id="k0c-a3-oQY"/>
+                <outlet property="phoneButton" destination="lye-9l-0pv" id="P3E-En-k3f"/>
+                <outlet property="segmentedControl" destination="AkU-kx-MxM" id="zBb-dp-M2W"/>
                 <outlet property="sosButton" destination="uzY-Ih-pgE" id="Oed-o1-ypG"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -29,18 +33,64 @@
                         <action selector="sosTapped:" destination="-1" eventType="touchUpInside" id="p3Q-Gz-2MN"/>
                     </connections>
                 </button>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" translatesAutoresizingMaskIntoConstraints="NO" id="ZwE-ZS-fEO">
+                    <rect key="frame" x="40" y="594" width="313" height="98"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lye-9l-0pv">
+                            <rect key="frame" x="0.0" y="0.0" width="98.333333333333329" height="98"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="lye-9l-0pv" secondAttribute="height" id="5xD-Y0-72E"/>
+                            </constraints>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" backgroundImage="call_SOS"/>
+                            <connections>
+                                <action selector="callButtonTapped:" destination="-1" eventType="touchUpInside" id="j9Y-Ym-fmz"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pUc-tE-6a8">
+                            <rect key="frame" x="214.66666666666666" y="0.0" width="98.333333333333343" height="98"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="pUc-tE-6a8" secondAttribute="height" id="pTT-ol-o4J"/>
+                            </constraints>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" backgroundImage="message_SOS"/>
+                            <connections>
+                                <action selector="messageButtonTapped:" destination="-1" eventType="touchUpInside" id="ORR-cx-DtN"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="pUc-tE-6a8" firstAttribute="width" secondItem="pUc-tE-6a8" secondAttribute="height" id="fKC-h9-Vya"/>
+                    </constraints>
+                </stackView>
+                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="AkU-kx-MxM">
+                    <rect key="frame" x="20" y="69" width="353" height="32"/>
+                    <segments>
+                        <segment title=""/>
+                        <segment title=""/>
+                    </segments>
+                </segmentedControl>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" red="0.96470588235294119" green="0.96470588235294119" blue="0.96470588235294119" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="ZwE-ZS-fEO" secondAttribute="trailing" constant="40" id="0rU-un-Ytv"/>
+                <constraint firstItem="ZwE-ZS-fEO" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="40" id="1sC-ut-Ifh"/>
+                <constraint firstItem="lye-9l-0pv" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.25" id="AgN-df-zdr"/>
+                <constraint firstItem="AkU-kx-MxM" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="Bnu-vt-TJi"/>
                 <constraint firstItem="uzY-Ih-pgE" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="K6T-wc-lc4"/>
+                <constraint firstItem="AkU-kx-MxM" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="10" id="dbh-MY-YtJ"/>
+                <constraint firstItem="ZwE-ZS-fEO" firstAttribute="top" secondItem="uzY-Ih-pgE" secondAttribute="bottom" constant="50" id="jGU-P7-i9M"/>
                 <constraint firstItem="uzY-Ih-pgE" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.6" id="rJQ-nZ-2Tj"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="AkU-kx-MxM" secondAttribute="trailing" constant="20" id="t5K-wo-9pM"/>
                 <constraint firstItem="uzY-Ih-pgE" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="tln-dV-AB8"/>
             </constraints>
             <point key="canvasLocation" x="21" y="-11"/>
         </view>
     </objects>
     <resources>
+        <image name="call_SOS" width="71.666664123535156" height="71.666664123535156"/>
+        <image name="message_SOS" width="71.666664123535156" height="71.666664123535156"/>
         <image name="sos_button" width="238" height="238.33332824707031"/>
     </resources>
 </document>
