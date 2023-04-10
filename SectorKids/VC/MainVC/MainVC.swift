@@ -25,7 +25,8 @@ class MainVC: UIViewController {
         super.viewDidLoad()
         setupNavBar()
         segmentedControl.removeAllSegments()
-        
+        MySocket.default.listenSOS()
+        print(Cache.getUserToken(), 111)
     }
     override func viewWillAppear(_ animated: Bool) {
         childNameLabel.text = ""

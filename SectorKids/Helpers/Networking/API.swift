@@ -43,26 +43,13 @@ class API {
         Net.request(url: Endpoints.otp_confirm, method: .post, params: param, headers: nil, withLoader: true) { data in
             guard let data = data else{return}
             Cache.saveUserToken(token: data["jwt"].stringValue)
+            
         } success: { isSuccess in
             completion(isSuccess)
         }
 
     }
-    class func send_passport_info(passport:String, inps: String, completion: @escaping (Bool)->Void){
-        let param = ["passport" : passport, "inps" : inps]
-        
-        let headers : HTTPHeaders = ["Authorization" : "Bearer \(Cache.getUserToken())"]
-        
-        Net.request(url: Endpoints.passport, method: .post, params: param, headers: headers, withLoader: true) { data in
-            guard let data = data else{return}
-            
-            let user = UserDM(json: data)
-            Cache.saveUser(user: user)
-        } success: { success in
-            completion(success)
-        }
-
-    }
+    
     class func login(phone:String, password: String, completion: @escaping (Bool) -> Void){
         let param = ["identifier" : phone, "password" : password]
         

@@ -28,7 +28,7 @@ class SOSVC: UIViewController , MFMessageComposeViewControllerDelegate{
             sosButton.isEnabled = false
         }
     }
-    var userData : UserDM!
+    var userData : UserDM?
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "SOS xizmati"
@@ -47,6 +47,7 @@ class SOSVC: UIViewController , MFMessageComposeViewControllerDelegate{
                 self.segmentedControl.selectedSegmentIndex = 0
             }
         }
+        print(Cache.getUserToken(), 1111)
     }
 
     @IBAction func messageButtonTapped(_ sender: UIButton) {
@@ -62,15 +63,18 @@ class SOSVC: UIViewController , MFMessageComposeViewControllerDelegate{
     }
     
     @IBAction func callButtonTapped(_ sender: UIButton) {
-        let phoneNumber = userData.children[segmentedControl.selectedSegmentIndex].phone
-        let numberUrl = URL(string: "tel://\(phoneNumber)")!
+        let phoneNumber = userData?.children[segmentedControl.selectedSegmentIndex].phone
+        let numberUrl = URL(string: "tel://\(phoneNumber ?? "")")!
         if UIApplication.shared.canOpenURL(numberUrl) {
             UIApplication.shared.open(numberUrl)
         }
     }
     
     @IBAction func sosTapped(_ sender: UIButton) {
-        
+        if let user = userData {
+            
+            MySocket.default.sendSOS(child_id: user.children[segmentedControl.selectedSegmentIndex].id)
+        }
     }
     
 
