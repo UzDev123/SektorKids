@@ -76,3 +76,4 @@ struct Child :Codable{
         commandQueue = json["commandQueue"].stringValue
     }
 }
+

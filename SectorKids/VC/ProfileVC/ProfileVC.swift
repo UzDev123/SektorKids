@@ -17,9 +17,9 @@ class ProfileVC: UIViewController {
         }
     }
     var data = [
-        "Sozlamalar",
         "Call center",
         "Biz haqimizda",
+        "Sozlamalar",
         "Chiqish",
         "Profilni o'chirish"
     ]

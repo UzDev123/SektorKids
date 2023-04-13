@@ -7,8 +7,8 @@
 
 import UIKit
 import MessageUI
+
 class SOSVC: UIViewController , MFMessageComposeViewControllerDelegate{
-   
     
     @IBOutlet weak var segmentedControl: UISegmentedControl!
     
@@ -28,26 +28,40 @@ class SOSVC: UIViewController , MFMessageComposeViewControllerDelegate{
             sosButton.isEnabled = false
         }
     }
-    var userData : UserDM?
+    var userData : UserDM? = Cache.getUser()
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "SOS xizmati"
         navigationItem.backButtonTitle = ""
-        segmentedControl.removeAllSegments()
+        setupNavBarAndSegmentedControl()
+        
+        
+    }
+    
+    private func setupNavBarAndSegmentedControl(){
+        self.segmentedControl.removeAllSegments()
+        if let userData = userData {
+            for i in userData.children.enumerated() {
+                self.segmentedControl.insertSegment(withTitle: i.element.name, at: i.offset, animated: false)
+            }
+            self.sosButton.isEnabled = true
+            self.messageButton.isEnabled = true
+            self.phoneButton.isEnabled = true
+            self.segmentedControl.selectedSegmentIndex = 0
+            
+        }
         API.getMe { userDM in
             //
             self.userData = userDM
             if self.segmentedControl.numberOfSegments < userDM.children.count {
                 for i in userDM.children.enumerated() {
-                    self.segmentedControl.insertSegment(withTitle: i.element.name, at: i.offset, animated: true)
+                    self.segmentedControl.insertSegment(withTitle: i.element.name, at: i.offset, animated: false)
                 }
-                self.sosButton.isEnabled = true
-                self.messageButton.isEnabled = true
-                self.phoneButton.isEnabled = true
-                self.segmentedControl.selectedSegmentIndex = 0
             }
+            self.sosButton.isEnabled = true
+            self.messageButton.isEnabled = true
+            self.phoneButton.isEnabled = true
         }
-        print(Cache.getUserToken(), 1111)
     }
 
     @IBAction func messageButtonTapped(_ sender: UIButton) {

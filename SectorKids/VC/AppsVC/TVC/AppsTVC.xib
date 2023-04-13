@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="61" id="KGk-i7-Jjw" customClass="AppsTVC" customModule="SectorKids" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="61"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="61"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P0M-Ns-6Pu">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="61"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="youtube" translatesAutoresizingMaskIntoConstraints="NO" id="0Zd-v9-CTq">
+                                <rect key="frame" x="9.9999999999999964" y="7.6666666666666679" width="45.666666666666657" height="45.666666666666657"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="0Zd-v9-CTq" secondAttribute="height" id="aVe-EZ-dKy"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Woj-0B-JvH">
+                                <rect key="frame" x="75.666666666666671" y="20.666666666666668" width="224.33333333333331" height="20.000000000000004"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Youtube" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fMd-tO-Rbg">
+                                        <rect key="frame" x="0.0" y="0.33333333333333215" width="58.666666666666664" height="19"/>
+                                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="16"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vuX-Ix-qtH">
+                                        <rect key="frame" x="175.33333333333331" y="0.0" width="51" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="0FM-uK-uFH"/>
+                                        </constraints>
+                                    </switch>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.96470588239999999" green="0.96470588239999999" blue="0.96470588239999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Woj-0B-JvH" firstAttribute="leading" secondItem="0Zd-v9-CTq" secondAttribute="trailing" constant="20" id="3IK-zt-6v5"/>
+                            <constraint firstItem="0Zd-v9-CTq" firstAttribute="leading" secondItem="P0M-Ns-6Pu" secondAttribute="leading" constant="10" id="7rR-6Q-pJy"/>
+                            <constraint firstAttribute="trailing" secondItem="Woj-0B-JvH" secondAttribute="trailing" constant="20" id="KZZ-vj-LIr"/>
+                            <constraint firstItem="0Zd-v9-CTq" firstAttribute="centerY" secondItem="P0M-Ns-6Pu" secondAttribute="centerY" id="aEy-5c-xDA"/>
+                            <constraint firstItem="0Zd-v9-CTq" firstAttribute="height" secondItem="P0M-Ns-6Pu" secondAttribute="height" multiplier="0.75" id="fnU-9J-UI0"/>
+                            <constraint firstItem="Woj-0B-JvH" firstAttribute="centerY" secondItem="P0M-Ns-6Pu" secondAttribute="centerY" id="mHQ-4y-YaE"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <integer key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="P0M-Ns-6Pu" secondAttribute="bottom" id="97O-bE-O4t"/>
+                    <constraint firstAttribute="trailing" secondItem="P0M-Ns-6Pu" secondAttribute="trailing" id="GES-km-rNU"/>
+                    <constraint firstItem="P0M-Ns-6Pu" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="hvF-3i-P3Q"/>
+                    <constraint firstItem="P0M-Ns-6Pu" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="rp9-3p-c6L"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="appName" destination="fMd-tO-Rbg" id="HwU-1s-x6s"/>
+                <outlet property="imgView" destination="0Zd-v9-CTq" id="ktF-H7-Vz7"/>
+                <outlet property="switchButton" destination="vuX-Ix-qtH" id="PAE-k2-C0w"/>
+            </connections>
+            <point key="canvasLocation" x="200" y="-27.816901408450704"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="youtube" width="49" height="49"/>
+    </resources>
+</document>

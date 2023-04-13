@@ -10,6 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RecordListVC" customModule="SectorKids" customModuleProvider="target">
             <connections>
+                <outlet property="segmentedControl" destination="seT-mF-D9A" id="zv1-I6-vl2"/>
                 <outlet property="tableView" destination="e1g-aQ-Kqw" id="A9O-wP-foK"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -20,14 +21,24 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="e1g-aQ-Kqw">
-                    <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                    <rect key="frame" x="0.0" y="100" width="393" height="718"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </tableView>
+                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="seT-mF-D9A">
+                    <rect key="frame" x="20" y="64" width="353" height="32"/>
+                    <segments>
+                        <segment title=""/>
+                        <segment title=""/>
+                    </segments>
+                </segmentedControl>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" red="0.96470588235294119" green="0.96470588235294119" blue="0.96470588235294119" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="e1g-aQ-Kqw" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="Osi-LD-4M4"/>
+                <constraint firstItem="seT-mF-D9A" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="21b-P1-mTR"/>
+                <constraint firstItem="e1g-aQ-Kqw" firstAttribute="top" secondItem="seT-mF-D9A" secondAttribute="bottom" constant="5" id="6MO-sG-nJ6"/>
+                <constraint firstAttribute="trailing" secondItem="seT-mF-D9A" secondAttribute="trailing" constant="20" id="IXc-4e-3po"/>
+                <constraint firstItem="seT-mF-D9A" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="5" id="Mlz-Iw-CUb"/>
                 <constraint firstItem="e1g-aQ-Kqw" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="X8Q-J8-lDr"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="e1g-aQ-Kqw" secondAttribute="trailing" id="fhe-Ky-2rk"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="e1g-aQ-Kqw" secondAttribute="bottom" id="vsh-lS-75N"/>
