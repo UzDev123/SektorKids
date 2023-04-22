@@ -1,27 +1,31 @@
 //
-//  AppsVC.swift
+//  LocationsVC.swift
 //  SectorKids
 //
-//  Created by rakhmatillo topiboldiev on 13/04/23.
+//  Created by rakhmatillo topiboldiev on 14/04/23.
 //
 
 import UIKit
+import MapKit
 
-class AppsVC: UIViewController {
+class LocationsVC: UIViewController {
     @IBOutlet weak var segmentedControl: UISegmentedControl!
     
     @IBOutlet weak var tableView: UITableView!{
         didSet{
             tableView.delegate = self
             tableView.dataSource = self
-            tableView.register(UINib(nibName: "AppsTVC", bundle: nil), forCellReuseIdentifier: AppsTVC.ID)
+            tableView.register(UINib(nibName: "LocationsTVC", bundle: nil), forCellReuseIdentifier: LocationsTVC.ID)
         }
     }
+    
     var user_children: [ChildDM]? = Cache.getChildren()
+    var locationsData : [LocationDM] = []
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "Ilovalar"
+        title = "Locations"
         setupNavBarAndSegmentedControl()
+        
     }
     
     private func setupNavBarAndSegmentedControl(){
@@ -32,16 +36,24 @@ class AppsVC: UIViewController {
             }
             self.segmentedControl.selectedSegmentIndex = 0
         }
+        if let user_children = user_children {
+            API.getLocations(child_id: user_children[segmentedControl.selectedSegmentIndex].id) { data in
+                self.locationsData = data
+                self.tableView.reloadData()
+            }
+        }
+       
     }
-
+  
 }
 
-extension AppsVC : UITableViewDelegate, UITableViewDataSource{
+extension LocationsVC: UITableViewDelegate, UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        15
+        locationsData.count
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: AppsTVC.ID, for: indexPath) as! AppsTVC
+        let cell = tableView.dequeueReusableCell(withIdentifier: LocationsTVC.ID, for: indexPath) as! LocationsTVC
+        cell.updateCell(data: locationsData[indexPath.row])
         return cell
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {

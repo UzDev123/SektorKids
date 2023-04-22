@@ -133,3 +133,20 @@ extension UISegmentedControl {
         }
     }
 }
+
+//MARK: - Date
+extension Date {
+   func getFormattedDate(format: String) -> String {
+        let dateformat = DateFormatter()
+        dateformat.dateFormat = format
+        return dateformat.string(from: self)
+    }
+}
+//MARK: - String
+extension String{
+    func getFormattedDate(format: String) -> Date{
+        let df = DateFormatter()
+        df.dateFormat = format
+        return df.date(from: self) ?? Date()
+    }
+}

@@ -21,9 +21,9 @@ class ContactTVC: UITableViewCell {
         
     }
     
-    func updateCell(data: ContactDM){
-        name_label.text = data.name
-        phone_label.text = data.phone
+    func updateCell(data:ContactDM){
+        name_label.text = data.contactName
+        phone_label.text = data.phoneNumber
     }
   
     

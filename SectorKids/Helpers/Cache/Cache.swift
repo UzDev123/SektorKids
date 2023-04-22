@@ -35,5 +35,22 @@ class Cache{
             return nil
         }
     }
+    class func saveChildren(children : [ChildDM]?){
+        do {
+            try UserDefaults.standard.set(object: children, forKey: "CHILDDM")
+            
+        } catch  {
+            print(error.localizedDescription)
+        }
+    }
+    class func getChildren() -> [ChildDM]?{
+        do {
+            let data = (try UserDefaults.standard.get(objectType: [ChildDM].self, forKey: "CHILDDM"))
+            return data
+        } catch  {
+            print(error.localizedDescription)
+            return nil
+        }
+    }
 }
 

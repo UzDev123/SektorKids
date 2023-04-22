@@ -35,12 +35,12 @@ class Net{
                     case 400...499:
                         //user error
                         let json = JSON(data)
-                        Alert.showAlert(forState: .error, message: "\(json["message"].stringValue)", vibrationType: .error)
+                        Alert.showAlert(forState: .error, message: "\(json["error"]["message"].stringValue)", vibrationType: .error)
                         success(false)
                     case 500...599:
                         //server error
                         let json = JSON(data)
-                        Alert.showAlert(forState: .error, message: "\(json["message"].stringValue)", vibrationType: .error)
+                        Alert.showAlert(forState: .error, message: "\(json["error"]["message"].stringValue)", vibrationType: .error)
                         success(false)
                     default:
                         break

@@ -66,6 +66,17 @@
 		DCB7C54C29E80B91002594F0 /* AppsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DCB7C54A29E80B91002594F0 /* AppsVC.xib */; };
 		DCB7C55029E80BF2002594F0 /* AppsTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB7C54E29E80BF2002594F0 /* AppsTVC.swift */; };
 		DCB7C55129E80BF2002594F0 /* AppsTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DCB7C54F29E80BF2002594F0 /* AppsTVC.xib */; };
+		DCB7C55529E9217D002594F0 /* LocationsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB7C55329E9217D002594F0 /* LocationsVC.swift */; };
+		DCB7C55629E9217D002594F0 /* LocationsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DCB7C55429E9217D002594F0 /* LocationsVC.xib */; };
+		DCB7C55A29E9267C002594F0 /* LocationsTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB7C55829E9267C002594F0 /* LocationsTVC.swift */; };
+		DCB7C55B29E9267C002594F0 /* LocationsTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DCB7C55929E9267C002594F0 /* LocationsTVC.xib */; };
+		DCB7C56729EFC91F002594F0 /* SMSVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB7C56529EFC91E002594F0 /* SMSVC.swift */; };
+		DCB7C56829EFC91F002594F0 /* SMSVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DCB7C56629EFC91E002594F0 /* SMSVC.xib */; };
+		DCB7C56C29EFC98A002594F0 /* SMSTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB7C56A29EFC98A002594F0 /* SMSTVC.swift */; };
+		DCB7C56D29EFC98A002594F0 /* SMSTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DCB7C56B29EFC98A002594F0 /* SMSTVC.xib */; };
+		DCB7C56F29EFCBB1002594F0 /* SMSDM.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB7C56E29EFCBB1002594F0 /* SMSDM.swift */; };
+		DCB7C57129EFFC17002594F0 /* LocationDM.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB7C57029EFFC17002594F0 /* LocationDM.swift */; };
+		DCB7C57329F01F48002594F0 /* StatisticsDM.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB7C57229F01F48002594F0 /* StatisticsDM.swift */; };
 		DCE5D55829C1CE5B00B1D0F6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE5D55729C1CE5B00B1D0F6 /* AppDelegate.swift */; };
 		DCE5D55A29C1CE5B00B1D0F6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE5D55929C1CE5B00B1D0F6 /* SceneDelegate.swift */; };
 		DCE5D56129C1CE5E00B1D0F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCE5D56029C1CE5E00B1D0F6 /* Assets.xcassets */; };
@@ -137,6 +148,17 @@
 		DCB7C54A29E80B91002594F0 /* AppsVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AppsVC.xib; sourceTree = "<group>"; };
 		DCB7C54E29E80BF2002594F0 /* AppsTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppsTVC.swift; sourceTree = "<group>"; };
 		DCB7C54F29E80BF2002594F0 /* AppsTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AppsTVC.xib; sourceTree = "<group>"; };
+		DCB7C55329E9217D002594F0 /* LocationsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsVC.swift; sourceTree = "<group>"; };
+		DCB7C55429E9217D002594F0 /* LocationsVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LocationsVC.xib; sourceTree = "<group>"; };
+		DCB7C55829E9267C002594F0 /* LocationsTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsTVC.swift; sourceTree = "<group>"; };
+		DCB7C55929E9267C002594F0 /* LocationsTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LocationsTVC.xib; sourceTree = "<group>"; };
+		DCB7C56529EFC91E002594F0 /* SMSVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMSVC.swift; sourceTree = "<group>"; };
+		DCB7C56629EFC91E002594F0 /* SMSVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SMSVC.xib; sourceTree = "<group>"; };
+		DCB7C56A29EFC98A002594F0 /* SMSTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMSTVC.swift; sourceTree = "<group>"; };
+		DCB7C56B29EFC98A002594F0 /* SMSTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SMSTVC.xib; sourceTree = "<group>"; };
+		DCB7C56E29EFCBB1002594F0 /* SMSDM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMSDM.swift; sourceTree = "<group>"; };
+		DCB7C57029EFFC17002594F0 /* LocationDM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDM.swift; sourceTree = "<group>"; };
+		DCB7C57229F01F48002594F0 /* StatisticsDM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsDM.swift; sourceTree = "<group>"; };
 		DCE5D55429C1CE5B00B1D0F6 /* SectorKids.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SectorKids.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCE5D55729C1CE5B00B1D0F6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DCE5D55929C1CE5B00B1D0F6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -297,6 +319,9 @@
 			children = (
 				DC25F2CB29DAD005000E17BF /* UserDM.swift */,
 				DCB7C54029E6920A002594F0 /* ContactDM.swift */,
+				DCB7C56E29EFCBB1002594F0 /* SMSDM.swift */,
+				DCB7C57029EFFC17002594F0 /* LocationDM.swift */,
+				DCB7C57229F01F48002594F0 /* StatisticsDM.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -440,6 +465,44 @@
 			path = TVC;
 			sourceTree = "<group>";
 		};
+		DCB7C55229E92133002594F0 /* LocationsVC */ = {
+			isa = PBXGroup;
+			children = (
+				DCB7C55729E92663002594F0 /* TVC */,
+				DCB7C55329E9217D002594F0 /* LocationsVC.swift */,
+				DCB7C55429E9217D002594F0 /* LocationsVC.xib */,
+			);
+			path = LocationsVC;
+			sourceTree = "<group>";
+		};
+		DCB7C55729E92663002594F0 /* TVC */ = {
+			isa = PBXGroup;
+			children = (
+				DCB7C55829E9267C002594F0 /* LocationsTVC.swift */,
+				DCB7C55929E9267C002594F0 /* LocationsTVC.xib */,
+			);
+			path = TVC;
+			sourceTree = "<group>";
+		};
+		DCB7C56429EFC8F0002594F0 /* SMSVC */ = {
+			isa = PBXGroup;
+			children = (
+				DCB7C56929EFC96D002594F0 /* SMSTVC */,
+				DCB7C56529EFC91E002594F0 /* SMSVC.swift */,
+				DCB7C56629EFC91E002594F0 /* SMSVC.xib */,
+			);
+			path = SMSVC;
+			sourceTree = "<group>";
+		};
+		DCB7C56929EFC96D002594F0 /* SMSTVC */ = {
+			isa = PBXGroup;
+			children = (
+				DCB7C56A29EFC98A002594F0 /* SMSTVC.swift */,
+				DCB7C56B29EFC98A002594F0 /* SMSTVC.xib */,
+			);
+			path = SMSTVC;
+			sourceTree = "<group>";
+		};
 		DCE5D54B29C1CE5A00B1D0F6 = {
 			isa = PBXGroup;
 			children = (
@@ -478,8 +541,10 @@
 		DCE5D56D29C1EBC700B1D0F6 /* VC */ = {
 			isa = PBXGroup;
 			children = (
-				DCB7C54829E80B6F002594F0 /* AppsVC */,
+				DCB7C56429EFC8F0002594F0 /* SMSVC */,
 				DCB7C53629E68FCD002594F0 /* ContactVC */,
+				DCB7C55229E92133002594F0 /* LocationsVC */,
+				DCB7C54829E80B6F002594F0 /* AppsVC */,
 				DCB7C4B329DD7D02002594F0 /* RecordListVC */,
 				DC25F2D229DBE67E000E17BF /* CreateChildVC */,
 				DC31826729CEF75D0036BAAA /* SOSVC */,
@@ -566,9 +631,11 @@
 				DC4DC98A29CC497A0025D866 /* OTPVC.xib in Resources */,
 				DC17E4FD29C2EE8D00E0FBD5 /* Roboto-BoldItalic.ttf in Resources */,
 				DCB7C4B729DD7D1B002594F0 /* RecordListVC.xib in Resources */,
+				DCB7C55B29E9267C002594F0 /* LocationsTVC.xib in Resources */,
 				DC17E50329C2EE8D00E0FBD5 /* Roboto-Thin.ttf in Resources */,
 				DCB7C53A29E68FDD002594F0 /* ContactVC.xib in Resources */,
 				DC17E4FE29C2EE8D00E0FBD5 /* Roboto-LightItalic.ttf in Resources */,
+				DCB7C55629E9217D002594F0 /* LocationsVC.xib in Resources */,
 				DC4DC98F29CD70570025D866 /* ProfileImageTVC.xib in Resources */,
 				DCE5D57129C1EBE300B1D0F6 /* MainVC.xib in Resources */,
 				DC17E50429C2EE8D00E0FBD5 /* Roboto-Black.ttf in Resources */,
@@ -585,6 +652,7 @@
 				DCB7C54729E80027002594F0 /* StatisticsTVC.xib in Resources */,
 				DCE5D56429C1CE5E00B1D0F6 /* LaunchScreen.storyboard in Resources */,
 				DC17E4F929C2EE8D00E0FBD5 /* Roboto-Light.ttf in Resources */,
+				DCB7C56D29EFC98A002594F0 /* SMSTVC.xib in Resources */,
 				DCB7C53F29E69002002594F0 /* ContactTVC.xib in Resources */,
 				DCE5D56129C1CE5E00B1D0F6 /* Assets.xcassets in Resources */,
 				DCB7C54C29E80B91002594F0 /* AppsVC.xib in Resources */,
@@ -592,6 +660,7 @@
 				DCB7C55129E80BF2002594F0 /* AppsTVC.xib in Resources */,
 				DC17E50229C2EE8D00E0FBD5 /* Roboto-Bold.ttf in Resources */,
 				DC17E4E729C2EC5F00E0FBD5 /* ProfileVC.xib in Resources */,
+				DCB7C56829EFC91F002594F0 /* SMSVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -646,6 +715,7 @@
 			files = (
 				DC25F2C329DAB6CF000E17BF /* Reachability.swift in Sources */,
 				DC17E4E629C2EC5F00E0FBD5 /* ProfileVC.swift in Sources */,
+				DCB7C56C29EFC98A002594F0 /* SMSTVC.swift in Sources */,
 				DC25F2D029DADDC8000E17BF /* LoginVC.swift in Sources */,
 				DC25F2C129DAB69E000E17BF /* API.swift in Sources */,
 				DCE5D56C29C1EBAC00B1D0F6 /* MainTabbarVC.swift in Sources */,
@@ -655,15 +725,20 @@
 				DC17E4E129C2EBC600E0FBD5 /* StatisticsVC.swift in Sources */,
 				DC25F2C629DAB793000E17BF /* Loader.swift in Sources */,
 				DC31826629CEE4800036BAAA /* ChartView.swift in Sources */,
+				DCB7C57129EFFC17002594F0 /* LocationDM.swift in Sources */,
 				DC17E50A29C2EFCD00E0FBD5 /* Extensions.swift in Sources */,
 				DCB7C54129E6920A002594F0 /* ContactDM.swift in Sources */,
+				DCB7C56F29EFCBB1002594F0 /* SMSDM.swift in Sources */,
+				DCB7C55529E9217D002594F0 /* LocationsVC.swift in Sources */,
 				DC31826F29D166140036BAAA /* Vibration.swift in Sources */,
 				DC25F2BE29DAB5DF000E17BF /* Net.swift in Sources */,
 				DCB7C54629E80027002594F0 /* StatisticsTVC.swift in Sources */,
 				DCE5D57029C1EBE300B1D0F6 /* MainVC.swift in Sources */,
+				DCB7C55A29E9267C002594F0 /* LocationsTVC.swift in Sources */,
 				DC17E50829C2EEC900E0FBD5 /* Enums.swift in Sources */,
 				DC4DC98E29CD70570025D866 /* ProfileImageTVC.swift in Sources */,
 				DC25F2D529DBE698000E17BF /* CreateChildVC.swift in Sources */,
+				DCB7C56729EFC91F002594F0 /* SMSVC.swift in Sources */,
 				DCB7C54B29E80B91002594F0 /* AppsVC.swift in Sources */,
 				DCB7C55029E80BF2002594F0 /* AppsTVC.swift in Sources */,
 				DCB7C53E29E69002002594F0 /* ContactTVC.swift in Sources */,
@@ -671,6 +746,7 @@
 				DCB7C53929E68FDD002594F0 /* ContactVC.swift in Sources */,
 				DC17E50E29C4258F00E0FBD5 /* WelcomeVC.swift in Sources */,
 				DCE5D55829C1CE5B00B1D0F6 /* AppDelegate.swift in Sources */,
+				DCB7C57329F01F48002594F0 /* StatisticsDM.swift in Sources */,
 				DCE5D55A29C1CE5B00B1D0F6 /* SceneDelegate.swift in Sources */,
 				DCB7C4B629DD7D1B002594F0 /* RecordListVC.swift in Sources */,
 				DC25F2CC29DAD005000E17BF /* UserDM.swift in Sources */,

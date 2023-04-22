@@ -17,45 +17,18 @@ class ContactVC: UIViewController {
         }
     }
     
-    @IBOutlet weak var segmentedControl: UISegmentedControl!
-    
-    var userData : UserDM?
-    var contactData : [ContactDM] = [
-        ContactDM(name: "Someone", phone: "+998901234567"),
-        ContactDM(name: "Someone", phone: "+998901234567"),
-        ContactDM(name: "Someone", phone: "+998901234567"),
-        ContactDM(name: "Someone", phone: "+998901234567"),
-        ContactDM(name: "Someone", phone: "+998901234567"),
-        ContactDM(name: "Someone", phone: "+998901234567"),
-        ContactDM(name: "Someone", phone: "+998901234567"),
-        ContactDM(name: "Someone", phone: "+998901234567"),
-        ContactDM(name: "Someone", phone: "+998901234567"),
-        ContactDM(name: "Someone", phone: "+998901234567"),
-        ContactDM(name: "Someone", phone: "+998901234567"),
-        ContactDM(name: "Someone", phone: "+998901234567")
-    ]
+    var child_id : Int = -1
+    var contactData : [ContactDM] = []
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Kontaktlar"
-        setupNavBarAndSegmentedControl()
+        getContacts(child_id: child_id)
     }
-    
-    private func setupNavBarAndSegmentedControl(){
-        self.segmentedControl.removeAllSegments()
-        if let userData = userData {
-            for i in userData.children.enumerated() {
-                self.segmentedControl.insertSegment(withTitle: i.element.name, at: i.offset, animated: false)
-            }
-            self.segmentedControl.selectedSegmentIndex = 0
-        }
-        API.getMe { data in
-            self.userData = data
-            if self.segmentedControl.numberOfSegments < self.userData!.children.count {
-                for i in self.userData!.children.enumerated() {
-                    self.segmentedControl.insertSegment(withTitle: i.element.name, at: i.offset, animated: false)
-                }
-                self.segmentedControl.selectedSegmentIndex = 0
-            }
+
+    func getContacts(child_id: Int){
+        API.getContacts(child_id: child_id) { data in
+            self.contactData = data
+            self.tableView.reloadData()
         }
     }
 

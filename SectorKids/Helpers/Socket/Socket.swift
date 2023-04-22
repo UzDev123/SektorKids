@@ -42,11 +42,11 @@ public class MySocket {
     
     ///childID -> child ID, command -> which service you want to get, params -> services in how long day
     ///If I want to get microphone recordings of 5 days, then I will give the number of days to 5.
-    ///command types: MICROPHONE, APPUSAGE, LOCATIONS, CONTACTS
+    ///command types: 0xMI, 0xAU, 0xLO, 0xCO
     #warning("CHILD ID NI O'ZGARTIRISH KERAK")
     public func sendCommand(childID: Int, command: String, params: String){
         let d : [String : Any] = [
-             "childID" : "\(15)",
+             "childID" : "\(16)",
              "command": command,
              "params" : params
             ]

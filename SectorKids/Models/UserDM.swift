@@ -17,7 +17,7 @@ struct UserDM : Codable{
     var updated_at :String
     var passport: String
     var inps:String
-    var children  : [Child]
+    var children  : [ChildDM]
     init(json:JSON){
         id = json["id"].intValue
         name = json["name"].stringValue
@@ -28,16 +28,16 @@ struct UserDM : Codable{
         updated_at = json["updatedAt"].stringValue
         passport = json["passport"].stringValue
         inps = json["inps"].stringValue
-        var childrenArr = [Child]()
+        var childrenArr = [ChildDM]()
         for i in json["children"].arrayValue{
-            let child = Child(json: i)
+            let child = ChildDM(json: i)
             childrenArr.append(child)
         }
         self.children = childrenArr
     }
 }
 
-struct Child :Codable{
+struct ChildDM :Codable{
     var id: Int
     var name: String
     var gender : String

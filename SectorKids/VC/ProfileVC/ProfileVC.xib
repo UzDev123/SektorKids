@@ -32,7 +32,7 @@
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="2OU-2f-CXg" secondAttribute="trailing" id="WKu-nj-foD"/>
                 <constraint firstItem="2OU-2f-CXg" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="xDa-FX-KRP"/>
             </constraints>
-            <point key="canvasLocation" x="306" y="42"/>
+            <point key="canvasLocation" x="-466" y="48"/>
         </view>
     </objects>
 </document>

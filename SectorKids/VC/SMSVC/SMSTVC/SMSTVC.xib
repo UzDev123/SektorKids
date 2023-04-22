@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="SMSTVC" customModule="SectorKids" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vqR-0c-UVa">
+                        <rect key="frame" x="20" y="5" width="280" height="34"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sms_icon_in" translatesAutoresizingMaskIntoConstraints="NO" id="W1g-22-vOB">
+                                <rect key="frame" x="10.000000000000002" y="4.3333333333333339" width="25.666666666666671" height="25.333333333333329"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="W1g-22-vOB" secondAttribute="height" id="Fw4-gJ-YGX"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="PiS-ht-q2B">
+                                <rect key="frame" x="50.666666666666671" y="2.3333333333333339" width="219.33333333333331" height="29.666666666666664"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="m4l-Fd-3qW">
+                                        <rect key="frame" x="0.0" y="0.0" width="219.33333333333334" height="15.333333333333334"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5E1-8T-kTW">
+                                                <rect key="frame" x="0.0" y="0.0" width="3.3333333333333335" height="15.333333333333334"/>
+                                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="13"/>
+                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1A9-Az-aIr">
+                                                <rect key="frame" x="216.33333333333331" y="0.0" width="3" height="14.333333333333334"/>
+                                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="12"/>
+                                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hhy-Ml-g1D">
+                                        <rect key="frame" x="0.0" y="15.333333333333336" width="219.33333333333334" height="14.333333333333336"/>
+                                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="12"/>
+                                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="W1g-22-vOB" firstAttribute="centerY" secondItem="vqR-0c-UVa" secondAttribute="centerY" id="2QQ-nb-O3B"/>
+                            <constraint firstItem="W1g-22-vOB" firstAttribute="leading" secondItem="vqR-0c-UVa" secondAttribute="leading" constant="10" id="BIu-XL-bLq"/>
+                            <constraint firstItem="PiS-ht-q2B" firstAttribute="leading" secondItem="W1g-22-vOB" secondAttribute="trailing" constant="15" id="BbY-xI-NRY"/>
+                            <constraint firstItem="PiS-ht-q2B" firstAttribute="centerY" secondItem="vqR-0c-UVa" secondAttribute="centerY" id="NrI-j7-Aag"/>
+                            <constraint firstAttribute="trailing" secondItem="PiS-ht-q2B" secondAttribute="trailing" constant="10" id="hvm-L9-mPS"/>
+                            <constraint firstItem="W1g-22-vOB" firstAttribute="height" secondItem="vqR-0c-UVa" secondAttribute="height" multiplier="0.75" id="jRS-hf-b2q"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <integer key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="vqR-0c-UVa" secondAttribute="bottom" constant="5" id="EVY-7r-ujp"/>
+                    <constraint firstItem="vqR-0c-UVa" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="ME6-zS-LV6"/>
+                    <constraint firstAttribute="trailing" secondItem="vqR-0c-UVa" secondAttribute="trailing" constant="20" id="a5e-Mn-8iW"/>
+                    <constraint firstItem="vqR-0c-UVa" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="eOk-tr-I02"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="dateLabel" destination="1A9-Az-aIr" id="xwO-XK-G4r"/>
+                <outlet property="icon" destination="W1g-22-vOB" id="OSu-xs-8bJ"/>
+                <outlet property="name_label" destination="5E1-8T-kTW" id="efV-GY-1w2"/>
+                <outlet property="phone_label" destination="Hhy-Ml-g1D" id="WZr-9W-yHc"/>
+            </connections>
+            <point key="canvasLocation" x="150" y="25"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="sms_icon_in" width="40" height="40"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

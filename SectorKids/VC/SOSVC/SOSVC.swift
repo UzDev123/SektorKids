@@ -28,7 +28,7 @@ class SOSVC: UIViewController , MFMessageComposeViewControllerDelegate{
             sosButton.isEnabled = false
         }
     }
-    var userData : UserDM? = Cache.getUser()
+    var user_children : [ChildDM]? = Cache.getChildren()
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "SOS xizmati"
@@ -40,27 +40,14 @@ class SOSVC: UIViewController , MFMessageComposeViewControllerDelegate{
     
     private func setupNavBarAndSegmentedControl(){
         self.segmentedControl.removeAllSegments()
-        if let userData = userData {
-            for i in userData.children.enumerated() {
+        if let user_children = user_children {
+            for i in user_children.enumerated() {
                 self.segmentedControl.insertSegment(withTitle: i.element.name, at: i.offset, animated: false)
             }
             self.sosButton.isEnabled = true
             self.messageButton.isEnabled = true
             self.phoneButton.isEnabled = true
             self.segmentedControl.selectedSegmentIndex = 0
-            
-        }
-        API.getMe { userDM in
-            //
-            self.userData = userDM
-            if self.segmentedControl.numberOfSegments < userDM.children.count {
-                for i in userDM.children.enumerated() {
-                    self.segmentedControl.insertSegment(withTitle: i.element.name, at: i.offset, animated: false)
-                }
-            }
-            self.sosButton.isEnabled = true
-            self.messageButton.isEnabled = true
-            self.phoneButton.isEnabled = true
         }
     }
 
@@ -77,17 +64,19 @@ class SOSVC: UIViewController , MFMessageComposeViewControllerDelegate{
     }
     
     @IBAction func callButtonTapped(_ sender: UIButton) {
-        let phoneNumber = userData?.children[segmentedControl.selectedSegmentIndex].phone
-        let numberUrl = URL(string: "tel://\(phoneNumber ?? "")")!
-        if UIApplication.shared.canOpenURL(numberUrl) {
-            UIApplication.shared.open(numberUrl)
+        if let user_children = user_children {
+            let phoneNumber = user_children[segmentedControl.selectedSegmentIndex].phone
+            let numberUrl = URL(string: "tel://\(phoneNumber)")!
+            if UIApplication.shared.canOpenURL(numberUrl) {
+                UIApplication.shared.open(numberUrl)
+            }
         }
+        
     }
     
     @IBAction func sosTapped(_ sender: UIButton) {
-        if let user = userData {
-            
-            MySocket.default.sendSOS(child_id: user.children[segmentedControl.selectedSegmentIndex].id)
+        if let user_children = user_children {
+            MySocket.default.sendSOS(child_id: user_children[segmentedControl.selectedSegmentIndex].id)
         }
     }
     

@@ -17,7 +17,7 @@ class RecordListVC: UIViewController {
             tableView.register(UINib(nibName: "RecordListTVC", bundle: nil), forCellReuseIdentifier: RecordListTVC.ID)
         }
     }
-    var userData : UserDM?
+    var user_children : [ChildDM]? = Cache.getChildren()
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Yozuvlar"
@@ -26,6 +26,7 @@ class RecordListVC: UIViewController {
         navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(named: "refresh"), style: .done, target: self, action: #selector(refreshTapped))
         navigationItem.rightBarButtonItem?.tintColor = #colorLiteral(red: 0.217478931, green: 0.2878425121, blue: 0.3411255479, alpha: 1)
         setupNavBarAndSegmentedControl()
+        API.getRecordings(child_id: user_children![segmentedControl.selectedSegmentIndex].id)
     }
 
     @objc func refreshTapped(){
@@ -34,27 +35,15 @@ class RecordListVC: UIViewController {
     
     private func setupNavBarAndSegmentedControl(){
         self.segmentedControl.removeAllSegments()
-        if let userData = userData {
-            for i in userData.children.enumerated() {
+        if let user_children = user_children {
+            for i in user_children.enumerated() {
                 self.segmentedControl.insertSegment(withTitle: i.element.name, at: i.offset, animated: false)
             }
             self.segmentedControl.selectedSegmentIndex = 0
         }
         
-        API.getMe { userDM in
-            //
-            self.userData = userDM
-            if self.segmentedControl.numberOfSegments < userDM.children.count {
-                for i in userDM.children.enumerated() {
-                    self.segmentedControl.insertSegment(withTitle: i.element.name, at: i.offset, animated: false)
-                }
-                self.segmentedControl.selectedSegmentIndex = 0
-                
-            }
-        }
-        
-        if let userData = userData {
-            MySocket.default.sendCommand(childID: userData.children[self.segmentedControl.selectedSegmentIndex].id, command: "MICROPHONE", params: "")
+        if let user_children = user_children {
+            MySocket.default.sendCommand(childID: user_children[self.segmentedControl.selectedSegmentIndex].id, command: "MICROPHONE", params: "")
         }
     }
 

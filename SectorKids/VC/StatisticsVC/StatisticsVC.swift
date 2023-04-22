@@ -22,13 +22,12 @@ class StatisticsVC: UIViewController {
     @IBOutlet weak var childNameLabel: UILabel!
     
     private var chartView = CircleChartView()
-    var userData : UserDM! = Cache.getUser()
+    var user_children : [ChildDM]! = Cache.getChildren()
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Statistika"
-        if let userData = userData {
-            setupUserInfoAndSegmentedControl(userData: userData)
-        }
+        setupUserInfoAndSegmentedControl()
+        API.getAppUsages(child_id: user_children![segmentedControl.selectedSegmentIndex].id)
     }
     
     override func viewDidLayoutSubviews() {
@@ -38,29 +37,21 @@ class StatisticsVC: UIViewController {
         // Set the data and colors for the chart
         chartView.data = [0.4, 0.3, 0.2, 0.1]
         chartView.colors = [.red, .blue, .green, .yellow]
-        chartView.label.font = self.topView.frame.height > 160 ? .font(name: .roboto_regular, size: .r16) : .font(name: .roboto_regular, size:.r14)
+        chartView.label.font = self.topView.frame.height > 180 ? .font(name: .roboto_regular, size: .r14) : .font(name: .roboto_regular, size:.r12)
         chartView.label.text = "6 soat 30 daqiqa"
         self.topView.addSubview(chartView)
     }
     
     //MARK: - Setup UI and SegmentControl
-    private func setupUserInfoAndSegmentedControl(userData: UserDM){
+    private func setupUserInfoAndSegmentedControl(){
         self.segmentedControl.removeAllSegments()
-        for i in userData.children.enumerated() {
-            self.segmentedControl.insertSegment(withTitle: i.element.name, at: i.offset, animated: false)
-        }
-        self.segmentedControl.selectedSegmentIndex = 0
-        self.childNameLabel.text = userData.children[segmentedControl.selectedSegmentIndex].name
-        
-        API.getMe { userDM in
-            if userData.children.count < userDM.children.count {
-                self.userData = userDM
-                self.segmentedControl.removeAllSegments()
-                for i in userDM.children.enumerated() {
+        if let user_children = user_children{
+            if !user_children.isEmpty{
+                for i in user_children.enumerated() {
                     self.segmentedControl.insertSegment(withTitle: i.element.name, at: i.offset, animated: false)
                 }
                 self.segmentedControl.selectedSegmentIndex = 0
-                self.userData = userDM
+                self.childNameLabel.text = user_children[segmentedControl.selectedSegmentIndex].name
             }
         }
     }

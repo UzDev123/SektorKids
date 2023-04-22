@@ -7,8 +7,17 @@
 
 import Foundation
 import SwiftyJSON
+
 struct ContactDM{
-    var name:String
-    var phone: String
+    var id: Int
+    var contactName:String
+    var phoneNumber: String
+    var date : String
     
+    init(json: JSON){
+        id = json["id"].intValue
+        contactName = json["contactName"].stringValue
+        phoneNumber = json["phoneNumber"].stringValue
+        date = json["date"].stringValue
+    }
 }
