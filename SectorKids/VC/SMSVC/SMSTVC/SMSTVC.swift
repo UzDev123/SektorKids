@@ -28,7 +28,7 @@ class SMSTVC: UITableViewCell {
         name_label.text = data.address
         phone_label.text = data.msg
         icon.image = data.type == "inbox" ?  UIImage(named: "sms_icon_in") : UIImage(named: "sms_icon_out") /*sms_icon_out*/
-        dateLabel.text = data.date.getFormattedDate(format: "dd-MM-yy HH:mm").getFormattedDate(format: "yyyy-MM-dd HH:mm")
+        dateLabel.text = UIViewController.convertDateFormat(inputDate: data.date)
     }
   
 }

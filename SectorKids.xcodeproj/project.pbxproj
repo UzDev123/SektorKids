@@ -6,86 +6,6 @@
 	objectVersion = 56;
 	objects = {
 
-/* Begin PBXBuildFile section */
-		6B42CF566E91D3AF77CCD93C /* Pods_SectorKids.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 875792A9FEFD5B3A501C2B8B /* Pods_SectorKids.framework */; };
-		DC17E4E129C2EBC600E0FBD5 /* StatisticsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC17E4DF29C2EBC600E0FBD5 /* StatisticsVC.swift */; };
-		DC17E4E229C2EBC600E0FBD5 /* StatisticsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC17E4E029C2EBC600E0FBD5 /* StatisticsVC.xib */; };
-		DC17E4E629C2EC5F00E0FBD5 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC17E4E429C2EC5F00E0FBD5 /* ProfileVC.swift */; };
-		DC17E4E729C2EC5F00E0FBD5 /* ProfileVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC17E4E529C2EC5F00E0FBD5 /* ProfileVC.xib */; };
-		DC17E4F829C2EE8D00E0FBD5 /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DC17E4EB29C2EE8D00E0FBD5 /* Roboto-Medium.ttf */; };
-		DC17E4F929C2EE8D00E0FBD5 /* Roboto-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DC17E4EC29C2EE8D00E0FBD5 /* Roboto-Light.ttf */; };
-		DC17E4FA29C2EE8D00E0FBD5 /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DC17E4ED29C2EE8D00E0FBD5 /* Roboto-Regular.ttf */; };
-		DC17E4FB29C2EE8D00E0FBD5 /* Roboto-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DC17E4EE29C2EE8D00E0FBD5 /* Roboto-MediumItalic.ttf */; };
-		DC17E4FC29C2EE8D00E0FBD5 /* Roboto-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DC17E4EF29C2EE8D00E0FBD5 /* Roboto-ThinItalic.ttf */; };
-		DC17E4FD29C2EE8D00E0FBD5 /* Roboto-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DC17E4F029C2EE8D00E0FBD5 /* Roboto-BoldItalic.ttf */; };
-		DC17E4FE29C2EE8D00E0FBD5 /* Roboto-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DC17E4F129C2EE8D00E0FBD5 /* Roboto-LightItalic.ttf */; };
-		DC17E4FF29C2EE8D00E0FBD5 /* Roboto-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DC17E4F229C2EE8D00E0FBD5 /* Roboto-Italic.ttf */; };
-		DC17E50029C2EE8D00E0FBD5 /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = DC17E4F329C2EE8D00E0FBD5 /* LICENSE.txt */; };
-		DC17E50129C2EE8D00E0FBD5 /* Roboto-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DC17E4F429C2EE8D00E0FBD5 /* Roboto-BlackItalic.ttf */; };
-		DC17E50229C2EE8D00E0FBD5 /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DC17E4F529C2EE8D00E0FBD5 /* Roboto-Bold.ttf */; };
-		DC17E50329C2EE8D00E0FBD5 /* Roboto-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DC17E4F629C2EE8D00E0FBD5 /* Roboto-Thin.ttf */; };
-		DC17E50429C2EE8D00E0FBD5 /* Roboto-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DC17E4F729C2EE8D00E0FBD5 /* Roboto-Black.ttf */; };
-		DC17E50829C2EEC900E0FBD5 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC17E50729C2EEC900E0FBD5 /* Enums.swift */; };
-		DC17E50A29C2EFCD00E0FBD5 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC17E50929C2EFCD00E0FBD5 /* Extensions.swift */; };
-		DC17E50E29C4258F00E0FBD5 /* WelcomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC17E50C29C4258F00E0FBD5 /* WelcomeVC.swift */; };
-		DC17E50F29C4258F00E0FBD5 /* WelcomeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC17E50D29C4258F00E0FBD5 /* WelcomeVC.xib */; };
-		DC17E51329C43DC900E0FBD5 /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC17E51129C43DC900E0FBD5 /* RegisterVC.swift */; };
-		DC17E51429C43DC900E0FBD5 /* RegisterVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC17E51229C43DC900E0FBD5 /* RegisterVC.xib */; };
-		DC25F2BE29DAB5DF000E17BF /* Net.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC25F2BD29DAB5DF000E17BF /* Net.swift */; };
-		DC25F2C129DAB69E000E17BF /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC25F2C029DAB69E000E17BF /* API.swift */; };
-		DC25F2C329DAB6CF000E17BF /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC25F2C229DAB6CF000E17BF /* Reachability.swift */; };
-		DC25F2C629DAB793000E17BF /* Loader.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC25F2C529DAB793000E17BF /* Loader.swift */; };
-		DC25F2C929DAB7F7000E17BF /* Cache.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC25F2C829DAB7F7000E17BF /* Cache.swift */; };
-		DC25F2CC29DAD005000E17BF /* UserDM.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC25F2CB29DAD005000E17BF /* UserDM.swift */; };
-		DC25F2D029DADDC8000E17BF /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC25F2CE29DADDC8000E17BF /* LoginVC.swift */; };
-		DC25F2D129DADDC8000E17BF /* LoginVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC25F2CF29DADDC8000E17BF /* LoginVC.xib */; };
-		DC25F2D529DBE698000E17BF /* CreateChildVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC25F2D329DBE698000E17BF /* CreateChildVC.swift */; };
-		DC25F2D629DBE698000E17BF /* CreateChildVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC25F2D429DBE698000E17BF /* CreateChildVC.xib */; };
-		DC31826629CEE4800036BAAA /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC31826529CEE4800036BAAA /* ChartView.swift */; };
-		DC31826A29CEF77D0036BAAA /* SOSVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC31826829CEF77D0036BAAA /* SOSVC.swift */; };
-		DC31826B29CEF77D0036BAAA /* SOSVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC31826929CEF77D0036BAAA /* SOSVC.xib */; };
-		DC31826D29D165E30036BAAA /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC31826C29D165E30036BAAA /* Alert.swift */; };
-		DC31826F29D166140036BAAA /* Vibration.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC31826E29D166140036BAAA /* Vibration.swift */; };
-		DC4DC98929CC497A0025D866 /* OTPVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4DC98729CC497A0025D866 /* OTPVC.swift */; };
-		DC4DC98A29CC497A0025D866 /* OTPVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC4DC98829CC497A0025D866 /* OTPVC.xib */; };
-		DC4DC98E29CD70570025D866 /* ProfileImageTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4DC98C29CD70570025D866 /* ProfileImageTVC.swift */; };
-		DC4DC98F29CD70570025D866 /* ProfileImageTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC4DC98D29CD70570025D866 /* ProfileImageTVC.xib */; };
-		DCB7C4B629DD7D1B002594F0 /* RecordListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB7C4B429DD7D1B002594F0 /* RecordListVC.swift */; };
-		DCB7C4B729DD7D1B002594F0 /* RecordListVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DCB7C4B529DD7D1B002594F0 /* RecordListVC.xib */; };
-		DCB7C4BF29DD7E16002594F0 /* RecordListTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB7C4BD29DD7E16002594F0 /* RecordListTVC.swift */; };
-		DCB7C4C029DD7E16002594F0 /* RecordListTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DCB7C4BE29DD7E16002594F0 /* RecordListTVC.xib */; };
-		DCB7C4C329DEA442002594F0 /* Socket.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB7C4C229DEA442002594F0 /* Socket.swift */; };
-		DCB7C53929E68FDD002594F0 /* ContactVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB7C53729E68FDD002594F0 /* ContactVC.swift */; };
-		DCB7C53A29E68FDD002594F0 /* ContactVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DCB7C53829E68FDD002594F0 /* ContactVC.xib */; };
-		DCB7C53E29E69002002594F0 /* ContactTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB7C53C29E69002002594F0 /* ContactTVC.swift */; };
-		DCB7C53F29E69002002594F0 /* ContactTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DCB7C53D29E69002002594F0 /* ContactTVC.xib */; };
-		DCB7C54129E6920A002594F0 /* ContactDM.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB7C54029E6920A002594F0 /* ContactDM.swift */; };
-		DCB7C54629E80027002594F0 /* StatisticsTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB7C54429E80027002594F0 /* StatisticsTVC.swift */; };
-		DCB7C54729E80027002594F0 /* StatisticsTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DCB7C54529E80027002594F0 /* StatisticsTVC.xib */; };
-		DCB7C54B29E80B91002594F0 /* AppsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB7C54929E80B91002594F0 /* AppsVC.swift */; };
-		DCB7C54C29E80B91002594F0 /* AppsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DCB7C54A29E80B91002594F0 /* AppsVC.xib */; };
-		DCB7C55029E80BF2002594F0 /* AppsTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB7C54E29E80BF2002594F0 /* AppsTVC.swift */; };
-		DCB7C55129E80BF2002594F0 /* AppsTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DCB7C54F29E80BF2002594F0 /* AppsTVC.xib */; };
-		DCB7C55529E9217D002594F0 /* LocationsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB7C55329E9217D002594F0 /* LocationsVC.swift */; };
-		DCB7C55629E9217D002594F0 /* LocationsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DCB7C55429E9217D002594F0 /* LocationsVC.xib */; };
-		DCB7C55A29E9267C002594F0 /* LocationsTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB7C55829E9267C002594F0 /* LocationsTVC.swift */; };
-		DCB7C55B29E9267C002594F0 /* LocationsTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DCB7C55929E9267C002594F0 /* LocationsTVC.xib */; };
-		DCB7C56729EFC91F002594F0 /* SMSVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB7C56529EFC91E002594F0 /* SMSVC.swift */; };
-		DCB7C56829EFC91F002594F0 /* SMSVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DCB7C56629EFC91E002594F0 /* SMSVC.xib */; };
-		DCB7C56C29EFC98A002594F0 /* SMSTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB7C56A29EFC98A002594F0 /* SMSTVC.swift */; };
-		DCB7C56D29EFC98A002594F0 /* SMSTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DCB7C56B29EFC98A002594F0 /* SMSTVC.xib */; };
-		DCB7C56F29EFCBB1002594F0 /* SMSDM.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB7C56E29EFCBB1002594F0 /* SMSDM.swift */; };
-		DCB7C57129EFFC17002594F0 /* LocationDM.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB7C57029EFFC17002594F0 /* LocationDM.swift */; };
-		DCB7C57329F01F48002594F0 /* StatisticsDM.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB7C57229F01F48002594F0 /* StatisticsDM.swift */; };
-		DCE5D55829C1CE5B00B1D0F6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE5D55729C1CE5B00B1D0F6 /* AppDelegate.swift */; };
-		DCE5D55A29C1CE5B00B1D0F6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE5D55929C1CE5B00B1D0F6 /* SceneDelegate.swift */; };
-		DCE5D56129C1CE5E00B1D0F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCE5D56029C1CE5E00B1D0F6 /* Assets.xcassets */; };
-		DCE5D56429C1CE5E00B1D0F6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCE5D56229C1CE5E00B1D0F6 /* LaunchScreen.storyboard */; };
-		DCE5D56C29C1EBAC00B1D0F6 /* MainTabbarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE5D56B29C1EBAC00B1D0F6 /* MainTabbarVC.swift */; };
-		DCE5D57029C1EBE300B1D0F6 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE5D56E29C1EBE300B1D0F6 /* MainVC.swift */; };
-		DCE5D57129C1EBE300B1D0F6 /* MainVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DCE5D56F29C1EBE300B1D0F6 /* MainVC.xib */; };
-/* End PBXBuildFile section */
-
 /* Begin PBXFileReference section */
 		3F7E1947C68A5115DBE815C3 /* Pods-SectorKids.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SectorKids.release.xcconfig"; path = "Target Support Files/Pods-SectorKids/Pods-SectorKids.release.xcconfig"; sourceTree = "<group>"; };
 		875792A9FEFD5B3A501C2B8B /* Pods_SectorKids.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SectorKids.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -159,7 +79,14 @@
 		DCB7C56E29EFCBB1002594F0 /* SMSDM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMSDM.swift; sourceTree = "<group>"; };
 		DCB7C57029EFFC17002594F0 /* LocationDM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDM.swift; sourceTree = "<group>"; };
 		DCB7C57229F01F48002594F0 /* StatisticsDM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsDM.swift; sourceTree = "<group>"; };
-		DCE5D55429C1CE5B00B1D0F6 /* SectorKids.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SectorKids.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCB7C57529F7E2E5002594F0 /* CallLogsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallLogsVC.swift; sourceTree = "<group>"; };
+		DCB7C57629F7E2E5002594F0 /* CallLogsVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CallLogsVC.xib; sourceTree = "<group>"; };
+		DCB7C57A29F7E541002594F0 /* CallLogsTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallLogsTVC.swift; sourceTree = "<group>"; };
+		DCB7C57B29F7E541002594F0 /* CallLogsTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CallLogsTVC.xib; sourceTree = "<group>"; };
+		DCB7C57E29F7EBB2002594F0 /* CallLogsDM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallLogsDM.swift; sourceTree = "<group>"; };
+		DCC08A4529FA47AF00AEB253 /* MapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapVC.swift; sourceTree = "<group>"; };
+		DCC08A4629FA47AF00AEB253 /* MapVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MapVC.xib; sourceTree = "<group>"; };
+		DCC08A4929FB92A400AEB253 /* RecordingDM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingDM.swift; sourceTree = "<group>"; };
 		DCE5D55729C1CE5B00B1D0F6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DCE5D55929C1CE5B00B1D0F6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		DCE5D56029C1CE5E00B1D0F6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -169,17 +96,6 @@
 		DCE5D56E29C1EBE300B1D0F6 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		DCE5D56F29C1EBE300B1D0F6 /* MainVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainVC.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFrameworksBuildPhase section */
-		DCE5D55129C1CE5B00B1D0F6 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				6B42CF566E91D3AF77CCD93C /* Pods_SectorKids.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		11961DF1D048910E06697227 /* Pods */ = {
@@ -322,6 +238,8 @@
 				DCB7C56E29EFCBB1002594F0 /* SMSDM.swift */,
 				DCB7C57029EFFC17002594F0 /* LocationDM.swift */,
 				DCB7C57229F01F48002594F0 /* StatisticsDM.swift */,
+				DCB7C57E29F7EBB2002594F0 /* CallLogsDM.swift */,
+				DCC08A4929FB92A400AEB253 /* RecordingDM.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -468,6 +386,7 @@
 		DCB7C55229E92133002594F0 /* LocationsVC */ = {
 			isa = PBXGroup;
 			children = (
+				DCC08A4429FA478F00AEB253 /* MapVC */,
 				DCB7C55729E92663002594F0 /* TVC */,
 				DCB7C55329E9217D002594F0 /* LocationsVC.swift */,
 				DCB7C55429E9217D002594F0 /* LocationsVC.xib */,
@@ -503,6 +422,34 @@
 			path = SMSTVC;
 			sourceTree = "<group>";
 		};
+		DCB7C57429F7E2CA002594F0 /* CallLogsVC */ = {
+			isa = PBXGroup;
+			children = (
+				DCB7C57929F7E522002594F0 /* CallLogsTVC */,
+				DCB7C57529F7E2E5002594F0 /* CallLogsVC.swift */,
+				DCB7C57629F7E2E5002594F0 /* CallLogsVC.xib */,
+			);
+			path = CallLogsVC;
+			sourceTree = "<group>";
+		};
+		DCB7C57929F7E522002594F0 /* CallLogsTVC */ = {
+			isa = PBXGroup;
+			children = (
+				DCB7C57A29F7E541002594F0 /* CallLogsTVC.swift */,
+				DCB7C57B29F7E541002594F0 /* CallLogsTVC.xib */,
+			);
+			path = CallLogsTVC;
+			sourceTree = "<group>";
+		};
+		DCC08A4429FA478F00AEB253 /* MapVC */ = {
+			isa = PBXGroup;
+			children = (
+				DCC08A4529FA47AF00AEB253 /* MapVC.swift */,
+				DCC08A4629FA47AF00AEB253 /* MapVC.xib */,
+			);
+			path = MapVC;
+			sourceTree = "<group>";
+		};
 		DCE5D54B29C1CE5A00B1D0F6 = {
 			isa = PBXGroup;
 			children = (
@@ -516,7 +463,6 @@
 		DCE5D55529C1CE5B00B1D0F6 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				DCE5D55429C1CE5B00B1D0F6 /* SectorKids.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -541,6 +487,7 @@
 		DCE5D56D29C1EBC700B1D0F6 /* VC */ = {
 			isa = PBXGroup;
 			children = (
+				DCB7C57429F7E2CA002594F0 /* CallLogsVC */,
 				DCB7C56429EFC8F0002594F0 /* SMSVC */,
 				DCB7C53629E68FCD002594F0 /* ContactVC */,
 				DCB7C55229E92133002594F0 /* LocationsVC */,
@@ -567,28 +514,6 @@
 		};
 /* End PBXGroup section */
 
-/* Begin PBXNativeTarget section */
-		DCE5D55329C1CE5B00B1D0F6 /* SectorKids */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = DCE5D56829C1CE5E00B1D0F6 /* Build configuration list for PBXNativeTarget "SectorKids" */;
-			buildPhases = (
-				57B0A1F203664E316E609985 /* [CP] Check Pods Manifest.lock */,
-				DCE5D55029C1CE5B00B1D0F6 /* Sources */,
-				DCE5D55129C1CE5B00B1D0F6 /* Frameworks */,
-				DCE5D55229C1CE5B00B1D0F6 /* Resources */,
-				540CAFB78E614A1EE4A247FD /* [CP] Embed Pods Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = SectorKids;
-			productName = SectorKids;
-			productReference = DCE5D55429C1CE5B00B1D0F6 /* SectorKids.app */;
-			productType = "com.apple.product-type.application";
-		};
-/* End PBXNativeTarget section */
-
 /* Begin PBXProject section */
 		DCE5D54C29C1CE5A00B1D0F6 /* Project object */ = {
 			isa = PBXProject;
@@ -596,11 +521,6 @@
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1420;
 				LastUpgradeCheck = 1420;
-				TargetAttributes = {
-					DCE5D55329C1CE5B00B1D0F6 = {
-						CreatedOnToolsVersion = 14.2;
-					};
-				};
 			};
 			buildConfigurationList = DCE5D54F29C1CE5A00B1D0F6 /* Build configuration list for PBXProject "SectorKids" */;
 			compatibilityVersion = "Xcode 14.0";
@@ -615,148 +535,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				DCE5D55329C1CE5B00B1D0F6 /* SectorKids */,
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXResourcesBuildPhase section */
-		DCE5D55229C1CE5B00B1D0F6 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				DC31826B29CEF77D0036BAAA /* SOSVC.xib in Resources */,
-				DC17E50F29C4258F00E0FBD5 /* WelcomeVC.xib in Resources */,
-				DC17E4FC29C2EE8D00E0FBD5 /* Roboto-ThinItalic.ttf in Resources */,
-				DC4DC98A29CC497A0025D866 /* OTPVC.xib in Resources */,
-				DC17E4FD29C2EE8D00E0FBD5 /* Roboto-BoldItalic.ttf in Resources */,
-				DCB7C4B729DD7D1B002594F0 /* RecordListVC.xib in Resources */,
-				DCB7C55B29E9267C002594F0 /* LocationsTVC.xib in Resources */,
-				DC17E50329C2EE8D00E0FBD5 /* Roboto-Thin.ttf in Resources */,
-				DCB7C53A29E68FDD002594F0 /* ContactVC.xib in Resources */,
-				DC17E4FE29C2EE8D00E0FBD5 /* Roboto-LightItalic.ttf in Resources */,
-				DCB7C55629E9217D002594F0 /* LocationsVC.xib in Resources */,
-				DC4DC98F29CD70570025D866 /* ProfileImageTVC.xib in Resources */,
-				DCE5D57129C1EBE300B1D0F6 /* MainVC.xib in Resources */,
-				DC17E50429C2EE8D00E0FBD5 /* Roboto-Black.ttf in Resources */,
-				DC17E4E229C2EBC600E0FBD5 /* StatisticsVC.xib in Resources */,
-				DC17E4FF29C2EE8D00E0FBD5 /* Roboto-Italic.ttf in Resources */,
-				DC17E51429C43DC900E0FBD5 /* RegisterVC.xib in Resources */,
-				DC25F2D629DBE698000E17BF /* CreateChildVC.xib in Resources */,
-				DC17E50029C2EE8D00E0FBD5 /* LICENSE.txt in Resources */,
-				DC17E50129C2EE8D00E0FBD5 /* Roboto-BlackItalic.ttf in Resources */,
-				DC25F2D129DADDC8000E17BF /* LoginVC.xib in Resources */,
-				DCB7C4C029DD7E16002594F0 /* RecordListTVC.xib in Resources */,
-				DC17E4FA29C2EE8D00E0FBD5 /* Roboto-Regular.ttf in Resources */,
-				DC17E4F829C2EE8D00E0FBD5 /* Roboto-Medium.ttf in Resources */,
-				DCB7C54729E80027002594F0 /* StatisticsTVC.xib in Resources */,
-				DCE5D56429C1CE5E00B1D0F6 /* LaunchScreen.storyboard in Resources */,
-				DC17E4F929C2EE8D00E0FBD5 /* Roboto-Light.ttf in Resources */,
-				DCB7C56D29EFC98A002594F0 /* SMSTVC.xib in Resources */,
-				DCB7C53F29E69002002594F0 /* ContactTVC.xib in Resources */,
-				DCE5D56129C1CE5E00B1D0F6 /* Assets.xcassets in Resources */,
-				DCB7C54C29E80B91002594F0 /* AppsVC.xib in Resources */,
-				DC17E4FB29C2EE8D00E0FBD5 /* Roboto-MediumItalic.ttf in Resources */,
-				DCB7C55129E80BF2002594F0 /* AppsTVC.xib in Resources */,
-				DC17E50229C2EE8D00E0FBD5 /* Roboto-Bold.ttf in Resources */,
-				DC17E4E729C2EC5F00E0FBD5 /* ProfileVC.xib in Resources */,
-				DCB7C56829EFC91F002594F0 /* SMSVC.xib in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		540CAFB78E614A1EE4A247FD /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SectorKids/Pods-SectorKids-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SectorKids/Pods-SectorKids-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SectorKids/Pods-SectorKids-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		57B0A1F203664E316E609985 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-SectorKids-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
-/* Begin PBXSourcesBuildPhase section */
-		DCE5D55029C1CE5B00B1D0F6 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				DC25F2C329DAB6CF000E17BF /* Reachability.swift in Sources */,
-				DC17E4E629C2EC5F00E0FBD5 /* ProfileVC.swift in Sources */,
-				DCB7C56C29EFC98A002594F0 /* SMSTVC.swift in Sources */,
-				DC25F2D029DADDC8000E17BF /* LoginVC.swift in Sources */,
-				DC25F2C129DAB69E000E17BF /* API.swift in Sources */,
-				DCE5D56C29C1EBAC00B1D0F6 /* MainTabbarVC.swift in Sources */,
-				DCB7C4C329DEA442002594F0 /* Socket.swift in Sources */,
-				DC25F2C929DAB7F7000E17BF /* Cache.swift in Sources */,
-				DCB7C4BF29DD7E16002594F0 /* RecordListTVC.swift in Sources */,
-				DC17E4E129C2EBC600E0FBD5 /* StatisticsVC.swift in Sources */,
-				DC25F2C629DAB793000E17BF /* Loader.swift in Sources */,
-				DC31826629CEE4800036BAAA /* ChartView.swift in Sources */,
-				DCB7C57129EFFC17002594F0 /* LocationDM.swift in Sources */,
-				DC17E50A29C2EFCD00E0FBD5 /* Extensions.swift in Sources */,
-				DCB7C54129E6920A002594F0 /* ContactDM.swift in Sources */,
-				DCB7C56F29EFCBB1002594F0 /* SMSDM.swift in Sources */,
-				DCB7C55529E9217D002594F0 /* LocationsVC.swift in Sources */,
-				DC31826F29D166140036BAAA /* Vibration.swift in Sources */,
-				DC25F2BE29DAB5DF000E17BF /* Net.swift in Sources */,
-				DCB7C54629E80027002594F0 /* StatisticsTVC.swift in Sources */,
-				DCE5D57029C1EBE300B1D0F6 /* MainVC.swift in Sources */,
-				DCB7C55A29E9267C002594F0 /* LocationsTVC.swift in Sources */,
-				DC17E50829C2EEC900E0FBD5 /* Enums.swift in Sources */,
-				DC4DC98E29CD70570025D866 /* ProfileImageTVC.swift in Sources */,
-				DC25F2D529DBE698000E17BF /* CreateChildVC.swift in Sources */,
-				DCB7C56729EFC91F002594F0 /* SMSVC.swift in Sources */,
-				DCB7C54B29E80B91002594F0 /* AppsVC.swift in Sources */,
-				DCB7C55029E80BF2002594F0 /* AppsTVC.swift in Sources */,
-				DCB7C53E29E69002002594F0 /* ContactTVC.swift in Sources */,
-				DC31826A29CEF77D0036BAAA /* SOSVC.swift in Sources */,
-				DCB7C53929E68FDD002594F0 /* ContactVC.swift in Sources */,
-				DC17E50E29C4258F00E0FBD5 /* WelcomeVC.swift in Sources */,
-				DCE5D55829C1CE5B00B1D0F6 /* AppDelegate.swift in Sources */,
-				DCB7C57329F01F48002594F0 /* StatisticsDM.swift in Sources */,
-				DCE5D55A29C1CE5B00B1D0F6 /* SceneDelegate.swift in Sources */,
-				DCB7C4B629DD7D1B002594F0 /* RecordListVC.swift in Sources */,
-				DC25F2CC29DAD005000E17BF /* UserDM.swift in Sources */,
-				DC4DC98929CC497A0025D866 /* OTPVC.swift in Sources */,
-				DC31826D29D165E30036BAAA /* Alert.swift in Sources */,
-				DC17E51329C43DC900E0FBD5 /* RegisterVC.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
 		DCE5D56229C1CE5E00B1D0F6 /* LaunchScreen.storyboard */ = {
@@ -884,62 +665,6 @@
 			};
 			name = Release;
 		};
-		DCE5D56929C1CE5E00B1D0F6 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = AE4CFDCD038A17F7C1C0C673 /* Pods-SectorKids.debug.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = Q6ADGJMW5Y;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = SectorKids/Info.plist;
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = rakhamtillo.topiboldiev.SectorKids;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		DCE5D56A29C1CE5E00B1D0F6 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3F7E1947C68A5115DBE815C3 /* Pods-SectorKids.release.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = Q6ADGJMW5Y;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = SectorKids/Info.plist;
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = rakhamtillo.topiboldiev.SectorKids;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -948,15 +673,6 @@
 			buildConfigurations = (
 				DCE5D56629C1CE5E00B1D0F6 /* Debug */,
 				DCE5D56729C1CE5E00B1D0F6 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		DCE5D56829C1CE5E00B1D0F6 /* Build configuration list for PBXNativeTarget "SectorKids" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				DCE5D56929C1CE5E00B1D0F6 /* Debug */,
-				DCE5D56A29C1CE5E00B1D0F6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

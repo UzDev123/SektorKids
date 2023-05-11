@@ -18,7 +18,9 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OTPVC" customModule="SectorKids" customModuleProvider="target">
             <connections>
+                <outlet property="infoLabel" destination="DXT-Gm-URY" id="3EI-xa-71k"/>
                 <outlet property="otp_TF" destination="T6q-GN-UTh" id="Avz-ep-pce"/>
+                <outlet property="stopwatchLabel" destination="A5h-Wi-pSy" id="qmy-l4-Y2e"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -84,7 +86,7 @@ Agar tasdiqlash kodini olmagan bo'lsangiz, so'rovingizni bu orqali qayta yuboris
                 <constraint firstItem="T6q-GN-UTh" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="56/835" id="vzv-BA-L7a"/>
                 <constraint firstItem="fna-Ul-cIw" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="wqQ-4j-Nqs"/>
             </constraints>
-            <point key="canvasLocation" x="9.9236641221374047" y="19.718309859154932"/>
+            <point key="canvasLocation" x="253" y="26"/>
         </view>
     </objects>
 </document>

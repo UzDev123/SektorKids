@@ -144,7 +144,7 @@ class API {
     
     class func editProfile(parent_id: Int, name: String, completion: @escaping (Bool) -> Void){
         let param = ["name" : name]
-        Net.request(url: Endpoints.edit_profile + "\(parent_id)", method: .put, params: param, headers: header, withLoader: true) { data in
+        Net.request(url: Endpoints.edit_profile + "/\(parent_id)", method: .put, params: param, headers: header, withLoader: true) { data in
             
         } success: { success in
             completion(success)
@@ -165,16 +165,28 @@ class API {
             
         }
     }
-    class func getCallLogs(child_id: Int ){
+    class func getCallLogs(child_id: Int, completion: @escaping ([CallLogsDM]) -> Void ){
         Net.request(url: Endpoints.get_call_logs + "/\(child_id)", method: .get, params: nil, headers: header, withLoader: true) { data in
             guard let data = data else{return}
+            var call_logs = [CallLogsDM]()
+            for i in data.arrayValue {
+                let d = CallLogsDM(json: i)
+                call_logs.append(d)
+            }
+            completion(call_logs)
         } success: { success in
             //
         }
     }
-    class func getAppUsages(child_id: Int ){
+    class func getAppUsages(child_id: Int, completion: @escaping ([StatisticsDM]) -> Void ){
         Net.request(url: Endpoints.get_app_usages + "/\(child_id)", method: .get, params: nil, headers: header, withLoader: true) { data in
             guard let data = data else{return}
+            var statArr = [StatisticsDM]()
+            for i in data.arrayValue {
+                let d = StatisticsDM(json: i)
+                statArr.append(d)
+            }
+            completion(statArr)
         } success: { success in
             //
         }
@@ -192,9 +204,14 @@ class API {
             //
         }
     }
-    class func getRecordings(child_id: Int ){
+    class func getRecordings(child_id: Int, completion: @escaping ([RecordingDM]) -> Void ){
         Net.request(url: Endpoints.get_recordings + "/\(child_id)", method: .get, params: nil, headers: header, withLoader: true) { data in
             guard let data = data else{return}
+            var arr = [RecordingDM]()
+            for i in data.arrayValue {
+                arr.append(RecordingDM(json: i))
+            }
+            completion(arr)
         } success: { success in
             //
         }

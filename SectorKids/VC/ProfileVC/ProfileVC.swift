@@ -53,7 +53,7 @@ extension ProfileVC : UITableViewDelegate, UITableViewDataSource, ProfileTVCDele
         guard let userData = userData else{return}
         let alert = UIAlertController(title: "Profilni tahrirlash", message: "Ismingizni o'zgartirishingiz mumkin.", preferredStyle: .alert)
         
-        let save = UIAlertAction(title: "O'chirish", style: .default) { _ in
+        let save = UIAlertAction(title: "Saqlash", style: .default) { _ in
             let new_name :String = alert.textFields!.first!.text!
             API.editProfile(parent_id: userData.id, name: new_name) { success in
                 API.getMe { data in
@@ -117,9 +117,9 @@ extension ProfileVC : UITableViewDelegate, UITableViewDataSource, ProfileTVCDele
                 self.present(alert, animated: true)
             }
             if indexPath.row == data.count - 1{
-                Cache.saveUser(user: nil)
-                Cache.saveUserToken(token: "")
+                
                 if let window = UIApplication.shared.keyWindow{
+                    Cache.saveUser(user: nil)
                     Cache.saveUserToken(token: "")
                     Cache.saveChildren(children: nil)
                     window.rootViewController = UINavigationController(rootViewController:  WelcomeVC(nibName: "WelcomeVC", bundle: nil))

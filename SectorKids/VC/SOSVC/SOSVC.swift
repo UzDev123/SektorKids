@@ -29,6 +29,7 @@ class SOSVC: UIViewController , MFMessageComposeViewControllerDelegate{
         }
     }
     var user_children : [ChildDM]? = Cache.getChildren()
+    var last_selected_child_index  = 0
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "SOS xizmati"
@@ -47,7 +48,7 @@ class SOSVC: UIViewController , MFMessageComposeViewControllerDelegate{
             self.sosButton.isEnabled = true
             self.messageButton.isEnabled = true
             self.phoneButton.isEnabled = true
-            self.segmentedControl.selectedSegmentIndex = 0
+            self.segmentedControl.selectedSegmentIndex = self.last_selected_child_index
         }
     }
 

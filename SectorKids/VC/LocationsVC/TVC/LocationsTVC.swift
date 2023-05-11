@@ -16,13 +16,14 @@ class LocationsTVC: UITableViewCell {
     @IBOutlet weak var icon: UIImageView!
     override func awakeFromNib() {
         super.awakeFromNib()
-        
+        selectionStyle = .none
     }
 
     func updateCell(data : LocationDM){
-        locName.text = "\(data.id)"
-        distanceAndDate.text = data.date.getFormattedDate(format: "dd-MM-yyyy HH:mm").getFormattedDate(format: "dd-MM-yyyy HH:mm")
+        locName.text = "\(data.addressName)"
+        distanceAndDate.text = "\(UIViewController.getDateFromUnixStamp(inputDate: data.date))"
         
     }
     
 }
+

@@ -49,4 +49,11 @@ extension ContactVC : UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         70
     }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let phoneNumber = contactData[indexPath.row].phoneNumber
+        let numberUrl = URL(string: "tel://\(phoneNumber)")!
+        if UIApplication.shared.canOpenURL(numberUrl) {
+            UIApplication.shared.open(numberUrl)
+        }
+    }
 }

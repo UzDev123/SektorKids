@@ -40,9 +40,13 @@ class LoginVC: UIViewController, UITextFieldDelegate {
         }else{
             API.login(phone: String(phone_TF.text!.dropFirst()), password: password_TF.text!) { success in
                 if success{
-                    let vc = MainTabbarVC()
-                    vc.modalPresentationStyle = .overFullScreen
-                    self.present(vc,animated: true)
+                    API.getMe { data in
+                        if let window = UIApplication.shared.keyWindow{
+                            window.rootViewController = MainTabbarVC()
+                            window.makeKeyAndVisible()
+                        }
+                    }
+                    
                 }
             }
         }

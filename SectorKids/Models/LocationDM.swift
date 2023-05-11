@@ -13,11 +13,12 @@ struct LocationDM{
     var latitude: String
     var longitude: String
     var date: String
-    
+    var addressName: String
     init(json: JSON){
         id = json["id"].intValue
         latitude = json["latitude"].stringValue
-        longitude = json["logitude"].stringValue
+        longitude = json["longitude"].stringValue
         date = json["date"].stringValue
+        addressName = json["addressName"].stringValue
     }
 }

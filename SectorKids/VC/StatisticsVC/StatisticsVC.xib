@@ -42,19 +42,19 @@
                                     </constraints>
                                 </imageView>
                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="HOw-9z-dWJ">
-                                    <rect key="frame" x="84" y="6" width="229" height="47"/>
+                                    <rect key="frame" x="84" y="6" width="229" height="46.666666666666664"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="someone" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lUc-hp-c6y">
-                                            <rect key="frame" x="0.0" y="0.0" width="66.333333333333329" height="19"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="66.333333333333329" height="18.666666666666668"/>
                                             <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="16"/>
                                             <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <view contentMode="scaleToFill" horizontalHuggingPriority="253" translatesAutoresizingMaskIntoConstraints="NO" id="WPE-Vf-ruT">
-                                            <rect key="frame" x="0.0" y="29" width="84.333333333333329" height="18"/>
+                                            <rect key="frame" x="0.0" y="28.666666666666657" width="84.333333333333329" height="18"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="IRH-Ot-1xc">
-                                                    <rect key="frame" x="18.666666666666657" y="4" width="47" height="10"/>
+                                                    <rect key="frame" x="18.333333333333339" y="4" width="47.666666666666657" height="10"/>
                                                     <subviews>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="alarm_clock" translatesAutoresizingMaskIntoConstraints="NO" id="8at-qc-PAA">
                                                             <rect key="frame" x="0.0" y="0.0" width="10" height="10"/>
@@ -64,7 +64,7 @@
                                                             </constraints>
                                                         </imageView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="258" verticalHuggingPriority="251" text="6,5 soat" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2ms-fT-3By">
-                                                            <rect key="frame" x="15" y="0.0" width="32" height="10"/>
+                                                            <rect key="frame" x="15" y="0.0" width="32.666666666666664" height="10"/>
                                                             <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="9"/>
                                                             <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
@@ -109,6 +109,9 @@
                         <segment title="First"/>
                         <segment title="Second"/>
                     </segments>
+                    <connections>
+                        <action selector="segmentedControlToggled:" destination="-1" eventType="valueChanged" id="hlt-Kq-jCT"/>
+                    </connections>
                 </segmentedControl>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="qyj-yP-FKS">
                     <rect key="frame" x="0.0" y="335" width="393" height="483"/>

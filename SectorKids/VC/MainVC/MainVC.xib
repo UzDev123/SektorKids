@@ -16,6 +16,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainVC" customModule="SectorKids" customModuleProvider="target">
             <connections>
+                <outlet property="addChildImageView" destination="FoJ-WQ-PSF" id="vDT-dX-kgP"/>
                 <outlet property="childImageView" destination="C4Q-jB-fbQ" id="Z7d-Zc-KTN"/>
                 <outlet property="childLastSeenLabel" destination="rwJ-vQ-zLN" id="ikV-Rr-zYL"/>
                 <outlet property="childNameLabel" destination="vOL-h3-T0K" id="3uo-fT-xdJ"/>
@@ -132,6 +133,9 @@
                         <constraint firstAttribute="trailing" secondItem="Ys3-sm-kqG" secondAttribute="trailing" constant="20" id="oZE-ca-p9S"/>
                     </constraints>
                 </view>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="add_child" translatesAutoresizingMaskIntoConstraints="NO" id="FoJ-WQ-PSF">
+                    <rect key="frame" x="30" y="109" width="354" height="179"/>
+                </imageView>
                 <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2ro-63-zYv">
                     <rect key="frame" x="20" y="298" width="374" height="554"/>
                     <subviews>
@@ -419,31 +423,33 @@
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" red="0.96470588235294119" green="0.96470588235294119" blue="0.96470588235294119" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
+                <constraint firstItem="FoJ-WQ-PSF" firstAttribute="centerX" secondItem="8C6-xF-sdg" secondAttribute="centerX" id="1z2-A5-sgh"/>
                 <constraint firstItem="8C6-xF-sdg" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="2HC-mX-KAV"/>
                 <constraint firstItem="8C6-xF-sdg" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.2" id="2zu-Zt-gHd"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="8C6-xF-sdg" secondAttribute="trailing" constant="30" id="Beg-sA-kU3"/>
+                <constraint firstItem="FoJ-WQ-PSF" firstAttribute="leading" secondItem="8C6-xF-sdg" secondAttribute="leading" id="DpO-Ta-KJd"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="7eQ-0R-UNe" secondAttribute="trailing" constant="30" id="GzX-ii-oiS"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="2ro-63-zYv" secondAttribute="bottom" constant="10" id="I6w-tM-iWh"/>
+                <constraint firstItem="FoJ-WQ-PSF" firstAttribute="top" secondItem="8C6-xF-sdg" secondAttribute="top" id="IcY-Jq-fp4"/>
                 <constraint firstItem="7eQ-0R-UNe" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="S4v-Sp-Xtt"/>
                 <constraint firstItem="7eQ-0R-UNe" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="10" id="XFy-qV-zgW"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="2ro-63-zYv" secondAttribute="trailing" constant="20" id="ZaV-Df-ua9"/>
                 <constraint firstAttribute="trailing" secondItem="Zdm-gh-8HO" secondAttribute="trailing" constant="30" id="bjG-QJ-pRt"/>
                 <constraint firstItem="2ro-63-zYv" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="dGl-Jc-kW6"/>
+                <constraint firstItem="FoJ-WQ-PSF" firstAttribute="bottom" secondItem="8C6-xF-sdg" secondAttribute="bottom" id="eMH-qk-YKG"/>
                 <constraint firstItem="Zdm-gh-8HO" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="geq-Fo-FaU"/>
+                <constraint firstItem="FoJ-WQ-PSF" firstAttribute="trailing" secondItem="8C6-xF-sdg" secondAttribute="trailing" id="hIV-B5-nhm"/>
                 <constraint firstItem="2ro-63-zYv" firstAttribute="top" secondItem="8C6-xF-sdg" secondAttribute="bottom" constant="10" id="k4a-tW-TL3"/>
                 <constraint firstItem="Zdm-gh-8HO" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="mR0-eI-fKb"/>
                 <constraint firstItem="8C6-xF-sdg" firstAttribute="top" secondItem="7eQ-0R-UNe" secondAttribute="bottom" constant="20" id="niB-gc-kHg"/>
                 <constraint firstItem="Zdm-gh-8HO" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="30" id="td2-H7-AdK"/>
+                <constraint firstItem="FoJ-WQ-PSF" firstAttribute="centerY" secondItem="8C6-xF-sdg" secondAttribute="centerY" id="vq2-nQ-EbO"/>
             </constraints>
-            <variation key="default">
-                <mask key="subviews">
-                    <exclude reference="Zdm-gh-8HO"/>
-                </mask>
-            </variation>
-            <point key="canvasLocation" x="438" y="-159"/>
+            <point key="canvasLocation" x="696" y="-438"/>
         </view>
     </objects>
     <resources>
+        <image name="add_child" width="367" height="180"/>
         <image name="alarm_clock" width="10.5" height="10.5"/>
         <image name="apps" width="70.5" height="70.5"/>
         <image name="arrow.counterclockwise.circle" catalog="system" width="128" height="123"/>

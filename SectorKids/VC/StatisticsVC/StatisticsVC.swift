@@ -23,14 +23,24 @@ class StatisticsVC: UIViewController {
     
     private var chartView = CircleChartView()
     var user_children : [ChildDM]! = Cache.getChildren()
+    var last_selected_child_index = 0
+    var data = [StatisticsDM]()
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Statistika"
         setupUserInfoAndSegmentedControl()
-        API.getAppUsages(child_id: user_children![segmentedControl.selectedSegmentIndex].id)
     }
-    
-    override func viewDidLayoutSubviews() {
+    override func viewWillAppear(_ animated: Bool) {
+        segmentedControl.selectedSegmentIndex = last_selected_child_index
+        if let user_children = user_children{
+            if !user_children.isEmpty {
+                print(segmentedControl.selectedSegmentIndex,last_selected_child_index)
+                API.getAppUsages(child_id: user_children[last_selected_child_index].id) { data in
+                    self.data = data
+                    self.tableView.reloadData()
+                }
+            }
+        }
         chartView = CircleChartView(frame: CGRect(x:20 , y: childStackView.frame.height + 30, width: self.topView.frame.height - childStackView.frame.height - 50, height: self.topView.frame.height - childStackView.frame.height - 50))
         chartView.strokeWidth = self.topView.frame.height > 120 ? 20 : 15
         chartView.backgroundColor = .clear
@@ -41,31 +51,48 @@ class StatisticsVC: UIViewController {
         chartView.label.text = "6 soat 30 daqiqa"
         self.topView.addSubview(chartView)
     }
+    override func viewDidDisappear(_ animated: Bool) {
+        chartView.removeFromSuperview()
+    }
+    
+    
     
     //MARK: - Setup UI and SegmentControl
     private func setupUserInfoAndSegmentedControl(){
         self.segmentedControl.removeAllSegments()
-        if let user_children = user_children{
-            if !user_children.isEmpty{
-                for i in user_children.enumerated() {
-                    self.segmentedControl.insertSegment(withTitle: i.element.name, at: i.offset, animated: false)
-                }
-                self.segmentedControl.selectedSegmentIndex = 0
-                self.childNameLabel.text = user_children[segmentedControl.selectedSegmentIndex].name
+        self.segmentedControl.selectedSegmentIndex = last_selected_child_index
+        API.getMyChildren { data in
+            self.user_children = data
+            for i in self.user_children.enumerated() {
+                self.segmentedControl.insertSegment(withTitle: i.element.name, at: i.offset, animated: false)
+            }
+            if !self.user_children.isEmpty{
+                self.segmentedControl.selectedSegmentIndex = self.last_selected_child_index
+                self.childNameLabel.text = self.user_children[self.segmentedControl.selectedSegmentIndex].name
             }
         }
     }
+    @IBAction func segmentedControlToggled(_ sender: UISegmentedControl) {
+        if !user_children.isEmpty {
+            last_selected_child_index = segmentedControl.selectedSegmentIndex
+            API.getAppUsages(child_id: user_children![last_selected_child_index].id) { data in
+                self.data = data
+                self.tableView.reloadData()
+            }
+        }
+    }
+    
 }
 
 
 extension StatisticsVC : UITableViewDelegate, UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        10
+        data.count
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: StatisticsTVC.ID, for: indexPath) as! StatisticsTVC
-        
+        cell.updateCell(data: data[indexPath.row])
         return cell
     }
     

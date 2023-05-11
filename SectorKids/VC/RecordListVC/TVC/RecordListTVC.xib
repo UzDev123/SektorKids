@@ -96,9 +96,12 @@
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <connections>
+                <outlet property="dateLabel" destination="8ZJ-HT-8HM" id="lfZ-QJ-osq"/>
                 <outlet property="moreButtonTapped" destination="afP-UH-Gom" id="nKm-bj-Fah"/>
+                <outlet property="nameLabel" destination="pTA-Ms-T75" id="Cyh-Zl-xeS"/>
+                <outlet property="playPauseButton" destination="rdg-dR-6RA" id="Ckc-HJ-bCl"/>
             </connections>
-            <point key="canvasLocation" x="317" y="61"/>
+            <point key="canvasLocation" x="495" y="-127"/>
         </tableViewCell>
     </objects>
     <resources>

@@ -134,19 +134,32 @@ extension UISegmentedControl {
     }
 }
 
-//MARK: - Date
-extension Date {
-   func getFormattedDate(format: String) -> String {
-        let dateformat = DateFormatter()
-        dateformat.dateFormat = format
-        return dateformat.string(from: self)
+
+
+extension UIViewController{
+    static func convertDateFormat(inputDate: String) -> String {
+        
+        let formatter = ISO8601DateFormatter()
+        formatter.formatOptions = [.withInternetDateTime, .withFractionalSeconds]
+        if let date = formatter.date(from: inputDate) {
+            let convertDateFormatter = DateFormatter()
+            convertDateFormatter.timeZone = .current
+            convertDateFormatter.dateFormat = "h:mm a, dd-MMM, yyyy"
+            return convertDateFormatter.string(from:date)
+        }else{
+            return ""
+        }
+
     }
-}
-//MARK: - String
-extension String{
-    func getFormattedDate(format: String) -> Date{
-        let df = DateFormatter()
-        df.dateFormat = format
-        return df.date(from: self) ?? Date()
+    
+    static func getDateFromUnixStamp(inputDate: String) -> String{
+        let interval = Int(inputDate) ?? 0
+        let date = Date(timeIntervalSince1970: TimeInterval(interval))
+        
+        let formatter = DateFormatter()
+        formatter.dateFormat = "h:mm a, dd-MMM, yyyy"
+        let str = formatter.string(from: date)
+        return str
     }
+    
 }

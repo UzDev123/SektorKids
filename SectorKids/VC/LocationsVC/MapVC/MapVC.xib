@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Map view configurations" minToolsVersion="14.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MapVC" customModule="SectorKids" customModuleProvider="target">
+            <connections>
+                <outlet property="bottomView" destination="4RE-Jk-JPZ" id="2Ri-np-6Ni"/>
+                <outlet property="mapView" destination="Yn9-Lo-TPd" id="I6B-uJ-EIz"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yn9-Lo-TPd">
+                    <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                    <standardMapConfiguration key="preferredConfiguration"/>
+                </mapView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4RE-Jk-JPZ">
+                    <rect key="frame" x="0.0" y="647.66666666666663" width="393" height="170.33333333333337"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RaL-YR-21W">
+                            <rect key="frame" x="25" y="19" width="0.0" height="0.0"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="16"/>
+                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.96470588239999999" green="0.96470588239999999" blue="0.96470588239999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" red="0.96470588239999999" green="0.96470588239999999" blue="0.96470588239999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="4RE-Jk-JPZ" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.2" id="1Yv-Da-VNZ"/>
+                <constraint firstItem="Yn9-Lo-TPd" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="C2L-DW-HpS"/>
+                <constraint firstItem="4RE-Jk-JPZ" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="KVB-BJ-GQ2"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Yn9-Lo-TPd" secondAttribute="bottom" id="Kr3-S3-qRh"/>
+                <constraint firstItem="4RE-Jk-JPZ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="O5i-KA-z2X"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Yn9-Lo-TPd" secondAttribute="trailing" id="UB9-Ia-jLJ"/>
+                <constraint firstItem="Yn9-Lo-TPd" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="l58-CM-xX9"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="4RE-Jk-JPZ" secondAttribute="trailing" id="oEr-y6-9Lt"/>
+            </constraints>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="4RE-Jk-JPZ"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="125.95419847328243" y="158.45070422535213"/>
+        </view>
+    </objects>
+</document>
